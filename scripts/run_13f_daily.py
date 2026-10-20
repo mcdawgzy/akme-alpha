@@ -2,7 +2,7 @@
 """Daily cron job: 13F filing ingestion + consensus flow computation.
 
 Scheduled via Hermes cron: 0 6 * * * (6 AM UTC+10, before market open).
-Usage: python run_13f_daily.py [--days N]
+Usage: python scripts/run_13f_daily.py [--days N]
 
 Pipeline:
 1. Scan SEC daily index for recent 13F-HR filings matching watchlist CIKs

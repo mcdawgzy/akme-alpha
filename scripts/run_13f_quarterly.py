@@ -12,10 +12,15 @@ import sys
 from pathlib import Path
 import datetime as dt
 
-PROJECT_ROOT = Path("C:/Users/cho_i")
+# Platform-agnostic path resolution (works on local and Render)
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_ROOT = SCRIPT_DIR.parent
+
+# Add project to path for imports
 sys.path.insert(0, str(PROJECT_ROOT))
 
-DB_PATH = PROJECT_ROOT / "akme_alpha" / "data" / "akme_alpha.db"
+# DB path relative to project root (works locally or in /opt/render/project/)
+DB_PATH = PROJECT_ROOT / "data" / "akme_alpha.db"
 
 def main():
     print(f"[13f-quarterly] Running quarterly backfill + QoQ analysis, DB: {DB_PATH}")

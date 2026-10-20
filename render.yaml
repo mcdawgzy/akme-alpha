@@ -21,6 +21,10 @@ cron:
     schedule: "0 6 * * *"  # 6 AM UTC+10 daily
     job: python /opt/render/project/scripts/run_yield_curve_daily.py
 
+  - name: 13f-daily
+    schedule: "0 6 * * *"  # 6 AM UTC+10 daily (Mon-Fri for latest filings)
+    job: python /opt/render/project/scripts/run_13f_daily.py
+
   - name: si-daily
     schedule: "0 6 * * *"  # 6 AM UTC+10 daily
     job: python /opt/render/project/scripts/run_short_interest_daily.py
