@@ -11,7 +11,7 @@ __pycache__/
 *.db
 
 # Allow the seed database (contains no secrets — API keys are demo keys)
-!data/akme_alpha.db
+!akme_alpha/data/akme_alpha.db
 
 # IDE
 .vscode/

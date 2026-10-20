@@ -20,7 +20,7 @@ PROJECT_ROOT = SCRIPT_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 # DB path relative to project root (works locally or in /opt/render/project/)
-DB_PATH = PROJECT_ROOT / "data" / "akme_alpha.db"
+DB_PATH = PROJECT_ROOT / "akme_alpha" / "data" / "akme_alpha.db"
 
 def main():
     print(f"[13f-quarterly] Running quarterly backfill + QoQ analysis, DB: {DB_PATH}")

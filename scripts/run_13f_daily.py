@@ -21,7 +21,7 @@ from akme_alpha.scanners.sec_filings import ingest, analyze
 
 
 def main():
-    db_path = Path(__file__).parent.parent / "data" / "akme_alpha.db"
+    db_path = Path(__file__).parent.parent / "akme_alpha" / "data" / "akme_alpha.db"
     print(f"[13f] Running daily pipeline, DB: {db_path}")
 
     # 1. Ingest recent 13F-HR filings
