@@ -18,10 +18,20 @@ services:
 
 cron:
   - name: yield-curve-daily
-    schedule: "0 6 * * *"  # 6 AM UTC+10 daily (before market open)
+    schedule: "0 6 * * *"  # 6 AM UTC+10 daily
     job: python /opt/render/project/scripts/run_yield_curve_daily.py
-    # Timezone: Render uses UTC; adjust for UTC+10 if needed
-    # Or use GitHub Actions for timezone-aware scheduling
+
+  - name: si-daily
+    schedule: "0 6 * * *"  # 6 AM UTC+10 daily
+    job: python /opt/render/project/scripts/run_short_interest_daily.py
+
+  - name: si-quarterly
+    schedule: "0 6 15 2,5,8,11 *"  # 6 AM UTC+10 quarterly
+    job: python /opt/render/project/scripts/run_13f_quarterly.py
+
+# Disk: SQLite DB at /opt/render/project/data/
+# Free tier: 512MB RAM, 1GB disk, 100GB bandwidth/month
+# Cold start: ~30s first request (DB init + uvicorn spin-up)
 
 # Disk: SQLite DB is in repo, no persistence needed for read-only API
 # Free tier: 512MB RAM, 1GB disk, 100GB bandwidth/month
