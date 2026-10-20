@@ -15,7 +15,7 @@ import datetime as dt
 PROJECT_ROOT = Path("C:/Users/cho_i")
 sys.path.insert(0, str(PROJECT_ROOT))
 
-DB_PATH = PROJECT_ROOT / "akme_alpha" / "data" / "databento.db"
+DB_PATH = PROJECT_ROOT / "akme_alpha" / "data" / "akme_alpha.db"
 
 def main():
     print(f"[short-interest] Running daily pipeline, DB: {DB_PATH}")

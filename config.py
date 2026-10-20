@@ -3,7 +3,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
-DB_PATH = DATA_DIR / "databento.db"
+DB_PATH = DATA_DIR / "akme_alpha.db"
 
 # API tier definitions: daily request allowance
 TIERS = {

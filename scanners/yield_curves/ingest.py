@@ -1,7 +1,7 @@
 """Ingest daily Treasury yield curve data from Yahoo Finance (no API key).
 
 Usage:
-    python -m scanners.yield_curves.ingest --db C:/Users/cho_i/purrtfolio.db
+    python -m scanners.yield_curves.ingest --db C:/Users/cho_i/akme_alpha/data/akme_alpha.db
 
 Fetches 3m/5y/10y/30y yields for the last LOOKBACK_DAYS and upserts into
 the yield_curves table. Designed to run daily via Hermes cron.

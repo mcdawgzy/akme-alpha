@@ -143,7 +143,7 @@ def ingest(db_path: str, api_key: str | None = None) -> dict:
 
 def main():
     ap = argparse.ArgumentParser(description="Fetch economic indicators from FRED")
-    ap.add_argument("--db", default="akme_alpha/data/databento.db")
+    ap.add_argument("--db", default="akme_alpha/data/akme_alpha.db")
     ap.add_argument("--api-key", default=None, help="FRED API key (or set FRED_API_KEY env)")
     args = ap.parse_args()
     result = ingest(args.db, args.api_key)

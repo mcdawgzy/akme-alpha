@@ -1,7 +1,7 @@
 """Ingest 13F-HR filings from SEC EDGAR daily index + filing text files.
 
 Usage:
-    python -m scanners.sec_filings.ingest --db C:/Users/cho_i/akme_alpha/data/databento.db
+    python -m scanners.sec_filings.ingest --db C:/Users/cho_i/akme_alpha/data/akme_alpha.db
 
 Pipeline:
 1. Scan the last INDEX_LOOKBACK_DAYS of SEC daily index files for 13F-HR filings

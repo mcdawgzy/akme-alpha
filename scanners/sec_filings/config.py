@@ -22,7 +22,7 @@ FILING_URL = "https://www.sec.gov/Archives/edgar/data/{cik_nozeros}/{accession}.
 SEC_USER_AGENT = "akme-alpha/0.2.0 (contact@akme.alpha)"
 
 # ── Ticker → CIK watchlist ────────────────────────────────────────────────
-# Curated list of large institutional investment managers — the "databento-lite"
+# Curated list of large institutional investment managers — the "akme-alpha"
 # approach: only filers with significant market impact, not all 9,000.
 # These CIKs are verified against SEC company_tickers.json.
 # Strategy: a mix of megacap passive (AUM > $1B), multi-strat quant, and

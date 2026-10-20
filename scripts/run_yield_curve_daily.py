@@ -15,7 +15,7 @@ from akme_alpha.scanners.yield_curves import ingest, analyze
 
 
 def main():
-    db_path = Path(__file__).parent / "data" / "databento.db"
+    db_path = Path(__file__).parent / "data" / "akme_alpha.db"
     print(f"[yield-curve] Running daily pipeline, DB: {db_path}")
 
     # Update DB with FRED key from env

@@ -1,7 +1,7 @@
 """Ingest FINRA short interest data from the bi-weekly CSV feed.
 
 Usage:
-    python -m scanners.finra_short_interest.ingest --db C:/Users/cho_i/akme_alpha/data/databento.db
+    python -m scanners.finra_short_interest.ingest --db C:/Users/cho_i/akme_alpha/data/akme_alpha.db
 
 Data source: https://cdn.finra.org/equity/otcmarket/biweekly/shrt{YYYYMMDD}.csv
 Pipe-delimited, no API key required. Bi-weekly (15th + last business day).

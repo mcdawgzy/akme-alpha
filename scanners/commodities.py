@@ -54,7 +54,7 @@ def ingest(db_path: str | None = None) -> dict:
     """Ingest all commodities and store in unified DB."""
     from akme_alpha import db as dbmod
 
-    db_path = db_path or "akme_alpha/data/databento.db"
+    db_path = db_path or "akme_alpha/data/akme_alpha.db"
     dbmod.init_db(db_path)
 
     summary = {}
@@ -79,7 +79,7 @@ def ingest(db_path: str | None = None) -> dict:
 
 def main():
     ap = argparse.ArgumentParser(description="Ingest commodity prices")
-    ap.add_argument("--db", default="akme_alpha/data/databento.db")
+    ap.add_argument("--db", default="akme_alpha/data/akme_alpha.db")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     result = ingest(db_path=args.db)

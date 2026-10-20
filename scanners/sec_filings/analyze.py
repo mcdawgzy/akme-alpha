@@ -6,7 +6,7 @@ Aggregates across watchlist funds per ticker per quarter:
 - Top holder per ticker
 
 Usage:
-    python -m scanners.sec_filings.analyze --db C:/Users/ako_alpha/data/databento.db
+    python -m scanners.sec_filings.analyze --db C:/Users/cho_i/akme_alpha/data/akme_alpha.db
 """
 from __future__ import annotations
 
