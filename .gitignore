@@ -10,8 +10,8 @@ __pycache__/
 .Python
 *.db
 
-# Data
-*.db
+# Allow the seed database (contains no secrets — API keys are demo keys)
+!data/akme_alpha.db
 
 # IDE
 .vscode/
