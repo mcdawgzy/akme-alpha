@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akme Alpha — Market Data Dashboard</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #0a0e14; color: #e8ebef;
+            max-width: 960px; margin: 0 auto;
+            padding: 24px;
+        }
+        h1 { color: #c9a24e; margin-bottom: 24px; font-size: 24px; }
+        .section { margin-bottom: 24px; background: #11161d; border-radius: 8px; padding: 16px; }
+        .section h2 { color: #c9a24e; margin-bottom: 16px; font-size: 14px; text-transform: uppercase; }
+        .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+        .card { background: #0a0f1a; border-radius: 6px; padding: 12px; }
+        .card h3 { font-size: 12px; color: #7e8a9a; margin-bottom: 4px; }
+        .card .value { font-size: 20px; color: #e8ebef; }
+        .good { color: #4ade80; } .bad { color: #f87171; } .neutral { color: #a3a3a3; }
+        .regime { font-size: 28px; font-weight: bold; }
+        .summary { color: #7e8a9a; margin-top: 8px; font-size: 13px; }
+        .api-key { background: #0a0f1a; padding: 8px; border-radius: 6px; font-family: monospace; font-size: 12px; margin-top: 8px; }
+        .loading { opacity: 0.6; }
+    </style>
+</head>
+<body>
+    <h1>Akme Alpha Market Dashboard</h1>
+
+    <div class="section">
+        <h2>Yield Curve Regime</h2>
+        <div class="row">
+            <div class="card">
+                <div class="regime" id="regime">...Loading</div>
+                <div class="summary" id="summary"></div>
+            </div>
+            <div class="card">
+                <h3>3m Yield</h3>
+                <div class="value" id="yield-3m">...</div>
+            </div>
+            <div class="card">
+                <h3>5y Yield</h3>
+                <div class="value" id="yield-5y">...</div>
+            </div>
+            <div class="card">
+                <h3>10y Yield</h3>
+                <div class="value" id="yield-10y">...</div>
+            </div>
+            <div class="card">
+                <h3>30y Yield</h3>
+                <div class="value" id="yield-30y">...</div>
+            </div>
+        </div>
+        <div id="api-key" class="api-key"></div>
+    </div>
+
+    <div class="section">
+        <h2>Commodities</h2>
+        <div class="row">
+            <div class="card"><h3>Oil (CL=F)</h3><div class="value" id="crude"></div></div>
+            <div class="card"><h3>Gas (NG=F)</h3><div class="value" id="gas"></div></div>
+            <div class="card"><h3>Gold (GC=F)</h3><div class="value" id="gold"></div></div>
+            <div class="card"><h3>Silver (SI=F)</h3><div class="value" id="silver"></div></div>
+            <div class="card"><h3>Copper (HG=F)</h3><div class="value" id="copper"></div></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Economic Indicators (FRED)</h2>
+        <div class="row">
+            <div class="card"><h3>CPI</h3><div class="value" id="cpi"></div></div>
+            <div class="card"><h3>PPI</h3><div class="value" id="ppi"></div></div>
+            <div class="card"><h3>Fed Funds</h3><div class="value" id="fed" style="font-size: 18px;">4.25%</div></div>
+            <div class="card"><h3>Unemployment</h3><div class="value" id="unemp"></div></div>
+            <div class="card"><h3>GDP</h3><div class="value" id="gdp" style="font-size: 14px;">$24.4T</div></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Trading Signals</h2>
+        <div class="row">
+            <div class="card"><h3>3m-10y Spread</h3><div class="value" id="spread3m10"></div></div>
+            <div class="card"><h3>Z-Score</h3><div class="value" id="zscore"></div></div>
+            <div class="card"><h3>6-mo 10y Change</h3><div class="value" id="change6m"></div></div>
+        </div>
+    </div>
+
+    <script>
+        async function fetchJSON(path) {
+            const r = await fetch(path);
+            if (!r.ok) throw new Error(await r.text());
+            return r.json();
+        }
+        function fmt(num, dp=2) { return typeof num === 'number' ? num.toFixed(dp) : 'N/A'; }
+
+        async function load() {
+            try {
+                const yc = await fetchJSON('/api/yield-curve/regime');
+                document.getElementById('regime').textContent = yc.regime;
+                document.getElementById('regime').className = `regime ${yc.regime === 'INVERTED' ? 'bad' : yc.regime === 'STEEP' ? 'good' : 'neutral'}`;
+                document.getElementById('summary').textContent = yc.summary;
+                document.getElementById('yield-3m').textContent = fmt(yc.curve['3m'], 2) + '%';
+                document.getElementById('yield-5y').textContent = fmt(yc.curve['5y'], 2) + '%';
+                document.getElementById('yield-10y').textContent = fmt(yc.curve['10y'], 2) + '%';
+                document.getElementById('yield-30y').textContent = fmt(yc.curve['30y'], 2) + '%';
+                document.getElementById('spread3m10').textContent = fmt(yc.spreads.spread_3m10, 0) + ' bp';
+                document.getElementById('zscore').textContent = fmt(yc.zscore_3m10, 2);
+                document.getElementById('change6m').textContent = fmt(yc.six_month_yield_change, 0) + ' bp';
+
+                const comm = await fetchJSON('/api/commodities');
+                document.getElementById('crude').textContent = '$' + fmt(comm.commodities.crude_oil.price, 2);
+                document.getElementById('gas').textContent = '$' + fmt(comm.commodities.natural_gas.price, 4);
+                document.getElementById('gold').textContent = '$' + fmt(comm.commodities.gold.price, 0);
+                document.getElementById('silver').textContent = '$' + fmt(comm.commodities.silver.price, 2);
+                document.getElementById('copper').textContent = '$' + fmt(comm.commodities.copper.price, 2);
+
+                const econ = await fetchJSON('/api/economic-indicators');
+                if (econ.indicators) {
+                    const ind = econ.indicators;
+                    document.getElementById('cpi').textContent = fmt(ind.cpi?.value, 1);
+                    document.getElementById('ppi').textContent = fmt(ind.ppi?.value, 1);
+                    document.getElementById('fed').textContent = fmt(ind.fed_funds?.value, 2) + '%';
+                    document.getElementById('unemp').textContent = fmt(ind.unemployment?.value, 1) + '%';
+                    document.getElementById('gdp').textContent = '$' + (ind.gdp?.value/1000).toFixed(1) + 'T';
+                }
+
+                const tier = await fetchJSON('/api/me').catch(() => null);
+                if (tier) document.getElementById('api-key').textContent = 'Key: ' + tier.api_key;
+            } catch(e) {
+                console.error(e);
+                document.querySelectorAll('[id]').forEach(el => el.textContent = 'Error');
+            }
+        }
+        load();
+        setInterval(load, 60000);
+    </script>
+</body>
+</html>

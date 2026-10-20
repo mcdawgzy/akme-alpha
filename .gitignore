@@ -1,0 +1,18 @@
+# Environment files — never commit secrets
+.env
+.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.db
+
+# Data
+*.db
+
+# IDE
+.vscode/
+.idea/
