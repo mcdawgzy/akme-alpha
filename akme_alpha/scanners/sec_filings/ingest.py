@@ -56,7 +56,7 @@ def discover_filings(target_date: dt.date) -> list[dict]:
     """
     url = _idx_url(target_date)
     resp = httpx.get(url, headers={"User-Agent": SEC_USER_AGENT}, timeout=30)
-    if resp.status_code == 404:
+    if resp.status_code in (404, 403):
         return []
     resp.raise_for_status()
 
@@ -69,19 +69,20 @@ def discover_filings(target_date: dt.date) -> list[dict]:
         if len(parts) < 5:
             continue
         cik = parts[0]
-        # SEC CIKs in the index are zero-padded to 10 digits
-        cik = cik.lstrip("0") or "0"
+        # SEC CIKs in the daily index are variable length
+        # Strip leading zeros for consistent comparison with WATCHLIST_CIKS
+        cik_stripped = cik.lstrip('0') or '0'
         if not cik.isdigit():
             continue
         form = parts[2]
         if form not in FILING_FORMS:
             continue
-        if cik not in WATCHLIST_CIKS:
+        if cik_stripped not in WATCHLIST_CIKS:
             continue
         # idx_path like: edgar/data/1009016/0001193125-26-422223.txt
         idx_path = parts[4]
         results.append({
-            "cik": cik,
+            "cik": cik_stripped,
             "accession": idx_path.split("/")[-1].replace(".txt", ""),
             "filer_name": parts[1],
             "form": form,

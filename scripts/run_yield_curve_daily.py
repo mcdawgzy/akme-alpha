@@ -24,11 +24,11 @@ def main():
         print(f"[yield-curve] FRED_API_KEY set, economic indicators enabled")
 
     # 1. Ingest latest Yahoo Finance yields
-    result = ingest(db_path=str(db_path))
+    result = ingest.ingest(db_path=str(db_path))
     print(f"[yield-curve] Ingested {result['total']} rows across {len(result)-2} maturities")
 
     # 2. Compute regime for latest date
-    regime_result = analyze(db_path=str(db_path))
+    regime_result = analyze.analyze(db_path=str(db_path))
     if "error" in regime_result:
         print(f"[yield-curve] Regime error: {regime_result['error']}")
     else:
