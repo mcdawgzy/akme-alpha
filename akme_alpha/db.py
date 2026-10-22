@@ -232,6 +232,24 @@ CREATE TABLE IF NOT EXISTS regime_daily (
     created_at      DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 CREATE INDEX IF NOT EXISTS idx_rd_verdict ON regime_daily(verdict);
+
+-- Market snapshot data (daily, per ticker — for the daily PNG dashboard)
+CREATE TABLE IF NOT EXISTS market_snapshot (
+    date        DATE    NOT NULL,
+    ticker      TEXT    NOT NULL,
+    section     TEXT    NOT NULL,   -- 'US Equities', 'Global Equities', etc.
+    price       REAL,               -- for equity/FX/commodity/crypto tickers
+    yield_pct   REAL,               -- for treasury yield tickers
+    change_pct  REAL,               -- 1-day % change (equities, FX, comms, crypto)
+    change_bps  REAL,               -- yield change in basis points (treasuries)
+    change_5d_pct REAL,             -- 5-day % change
+    is_yield    BOOLEAN DEFAULT 0,
+    ingested_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (date, ticker)
+);
+CREATE INDEX IF NOT EXISTS idx_ms_date     ON market_snapshot(date);
+CREATE INDEX IF NOT EXISTS idx_ms_ticker   ON market_snapshot(ticker);
+CREATE INDEX IF NOT EXISTS idx_ms_section  ON market_snapshot(section);
 """
 
 
