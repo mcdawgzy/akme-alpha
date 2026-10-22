@@ -173,27 +173,43 @@
     </div>
 
     <script>
-        async function loadRegime() {
+        // Live API (Render) first; jsdelivr CDN as fallback. The API reads the
+        // freshly-committed DB on each deploy and the CDN JSON is auto-pushed
+        // daily by the regime cron — both stay current. Swap API_URL to
+        // https://api.regime.akme.dev/api/regime/latest once the custom domain
+        // is wired in Render.
+        const API_URL = 'https://akme-alpha-api.onrender.com/api/regime/latest';
+        const CDN_URL = 'https://cdn.jsdelivr.net/gh/mcdawgzy/akme-alpha@master/regime_latest.json';
+
+        async function fetchRegime() {
+            let lastErr;
             try {
-                const r = await fetch('https://cdn.jsdelivr.net/gh/mcdawgzy/akme-alpha@master/regime_latest.json');
-                if (!r.ok) throw new Error('Regime data unavailable');
-                const data = await r.json();
+                const ctrl = new AbortController();
+                const to = setTimeout(() => ctrl.abort(), 4000);
+                const r = await fetch(API_URL, {cache: 'no-store', signal: ctrl.signal});
+                clearTimeout(to);
+                if (!r.ok) throw new Error('api http ' + r.status);
+                return await r.json();
+            } catch (e) {
+                lastErr = e;
+            }
+            const r = await fetch(CDN_URL);
+            if (!r.ok) throw lastErr || new Error('Regime data unavailable');
+            return await r.json();
+        }
 
-                const badge = document.getElementById('regime-badge');
-                const value = document.getElementById('regime-value');
-                const narrative = document.getElementById('regime-narrative');
-                const time = document.getElementById('update-time');
-
+        async function loadRegime() {
+            const value = document.getElementById('regime-value');
+            try {
+                const data = await fetchRegime();
                 const regime = data.verdict || 'Loading…';
                 value.textContent = regime;
                 value.className = 'value ' + regime.toLowerCase();
-
-                const narrativeText = data.narrative || '';
-                narrative.textContent = narrativeText;
-
-                time.textContent = data.date ? data.date.replace(/-/g, '/') : '–';
+                document.getElementById('regime-narrative').textContent = data.narrative || '';
+                document.getElementById('update-time').textContent =
+                    data.date ? data.date.replace(/-/g, '/') : '–';
             } catch(e) {
-                document.getElementById('regime-value').textContent = 'Error';
+                value.textContent = 'Error';
                 document.getElementById('regime-narrative').textContent = 'Could not load regime data.';
             }
         }
