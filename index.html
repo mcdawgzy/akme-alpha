@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akme Alpha — Market Intelligence</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: system-ui, -apple-system, Inter, sans-serif;
+            background: #0a0e14; color: #e8ebef;
+            max-width: 640px; margin: 0 auto;
+            padding: 24px;
+        }
+        .brand {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .brand h1 {
+            color: #c9a24e;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .brand p {
+            color: #7e8a9a;
+            font-size: 14px;
+        }
+        .card {
+            background: #11161d;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card h2 {
+            color: #e8ebef;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            color: #c9a24e;
+        }
+        .regime-display {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .regime-badge {
+            background: #0a0f1a;
+            border-radius: 8px;
+            padding: 16px 24px;
+            flex: 1;
+            text-align: center;
+        }
+        .regime-badge .label {
+            color: #7e8a9a;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+        .regime-badge .value {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .regime-badge.expansion { color: #4ade80; }
+        .regime-badge.recovery { color: #22c55e; }
+        .regime-badge.slowdown { color: #f59e0b; }
+        .regime-badge.recession { color: #f87171; }
+        .summary {
+            color: #7e8a9a;
+            font-size: 13px;
+            margin-top: 12px;
+            line-height: 1.4;
+        }
+        .narrative {
+            color: #a3a3a3;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-top: 8px;
+        }
+        .cta-section {
+            text-align: center;
+            margin-top: 32px;
+        }
+        .cta-section a {
+            display: inline-block;
+            background: #c9a24e;
+            color: #0a0e14;
+            text-decoration: none;
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: opacity 0.2s;
+        }
+        .cta-section a:hover { opacity: 0.8; }
+        .divider {
+            height: 1px;
+            background: #1a1f2a;
+            margin: 32px 0;
+        }
+        .features {
+            display: grid;
+            gap: 12px;
+        }
+        .feature {
+            background: #0a0f1a;
+            border-radius: 6px;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .feature .tag {
+            background: #c9a24e;
+            color: #0a0e14;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .feature .name {
+            color: #e8ebef;
+            font-size: 13px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #5a647a;
+            font-size: 11px;
+            line-height: 1.4;
+        }
+        .loading { opacity: 0.6; }
+    </style>
+</head>
+<body>
+    <div class="brand">
+        <h1>Akme Alpha</h1>
+        <p>Market Intelligence • No Exchange Licenses Required</p>
+    </div>
+
+    <div class="card">
+        <h2>Market Regime</h2>
+        <div class="regime-display">
+            <div class="regime-badge" id="regime-badge">
+                <div class="label">Current State</div>
+                <div class="value" id="regime-value">Loading…</div>
+            </div>
+            <div>
+                <div id="regime-narrative" class="narrative"></div>
+                <div style="color: #7e8a9a; font-size: 11px; margin-top: 4px;">Last updated: <span id="update-time">–</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Free Insights</h2>
+        <div class="features">
+            <div class="feature"><span class="tag">FREE</span><span class="name">Market Regime Indicator (daily)</span></div>
+            <div class="feature"><span class="tag">FREE</span><span class="name">Yield Curve Analysis</span></div>
+            <div class="feature"><span class="tag">FREE</span><span class="name">Commodity Snapshots</span></div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="cta-section">
+        <a href="https://api.purrtfolio.com" target="_blank">Get API Access →</a>
+    </div>
+
+    <div class="footer">
+        <div>Free tier: Daily regime snapshots, yield curve, commodity prices.</div>
+        <div style="margin-top: 4px;">API available at <a href="https://api.purrtfolio.com" style="color: #c9a24e; text-decoration: none;">api.purrtfolio.com</a> | <a href="https://github.com/mcdawgzy/akme-alpha" style="color: #7e8a9a;">github.com/mcdawgzy/akme-alpha</a></div>
+    </div>
+
+    <script>
+        async function loadRegime() {
+            try {
+                const r = await fetch('https://cdn.jsdelivr.net/gh/mcdawgzy/akme-alpha@main/regime_latest.json');
+                if (!r.ok) throw new Error('Regime data unavailable');
+                const data = await r.json();
+
+                const badge = document.getElementById('regime-badge');
+                const value = document.getElementById('regime-value');
+                const narrative = document.getElementById('regime-narrative');
+                const time = document.getElementById('update-time');
+
+                const regime = data.verdict || 'Loading…';
+                value.textContent = regime;
+                value.className = 'value ' + regime.toLowerCase();
+
+                const narrativeText = data.narrative || '';
+                narrative.textContent = narrativeText;
+
+                time.textContent = data.date ? data.date.replace(/-/g, '/') : '–';
+            } catch(e) {
+                document.getElementById('regime-value').textContent = 'Error';
+                document.getElementById('regime-narrative').textContent = 'Could not load regime data.';
+            }
+        }
+
+        // Fetch regime data on load
+        loadRegime();
+        // Refresh every 5 minutes
+        setInterval(loadRegime, 5 * 60 * 1000);
+    </script>
+</body>
+</html>
