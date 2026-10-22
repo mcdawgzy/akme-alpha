@@ -1,14 +1,37 @@
 {
   "date": "2026-10-22",
   "verdict": "Slowdown",
-  "composite_score": -0.164,
-  "narrative": "Market regime holds at Slowdown (composite: -0.16). Drivers: growth_value (-1.5\u03c3), yield_curve (+1.4\u03c3), credit_spreads (+1.3\u03c3). Defensive rotation likely. Increase cash and quality duration exposure.",
+  "composite_score": -0.187,
+  "narrative": "Market regime holds at Slowdown (composite: -0.19). Drivers: growth_value (-1.5σ), credit_spreads (+1.3σ), yield_curve (+1.3σ). Defensive rotation likely. Increase cash and quality duration exposure.",
   "top_drivers": [
-    "growth_value: -1.5\u03c3",
-    "yield_curve: +1.4\u03c3",
-    "credit_spreads: +1.3\u03c3"
+    "growth_value: -1.5σ",
+    "credit_spreads: +1.3σ",
+    "yield_curve: +1.3σ"
   ],
   "regime_changed": false,
+  "last_shift_date": "2026-10-22",
+  "factor_z_scores": {
+    "valuation_cape": -0.44,
+    "growth_value": -1.499,
+    "momentum": -0.674,
+    "yield_curve": 1.282,
+    "credit_spreads": 1.338,
+    "commodities": -0.485,
+    "fx_strength": 0.948
+  },
+  "weight_coverage": 0.88,
   "sources_ok": 7,
+  "source_health": {
+    "valuation_cape": "ok",
+    "growth_value": "ok",
+    "momentum": "ok",
+    "yield_curve": "ok",
+    "credit_spreads": "ok",
+    "fcf_yield": "disabled_phase1b",
+    "commodities": "ok",
+    "asset_growth": "disabled_phase1b",
+    "stability": "disabled_phase1b",
+    "fx_strength": "ok"
+  },
   "version": "1.0"
 }
