@@ -205,6 +205,33 @@ CREATE TABLE IF NOT EXISTS ingestion_log_si (
     created_at      DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 CREATE INDEX IF NOT EXISTS idx_log_si_date ON ingestion_log_si(run_date);
+
+-- ── Regime factor data (daily, per factor) ───────────────────────────────
+CREATE TABLE IF NOT EXISTS regime_factors (
+    date        DATE    NOT NULL,
+    factor_name TEXT    NOT NULL,
+    value       REAL,
+    zscore      REAL,
+    source      TEXT,
+    created_at  DATETIME DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (date, factor_name)
+);
+CREATE INDEX IF NOT EXISTS idx_rf_date   ON regime_factors(date);
+CREATE INDEX IF NOT EXISTS idx_rf_factor ON regime_factors(factor_name);
+
+-- ── Regime daily verdict (composite) ────────────────────────────────────
+CREATE TABLE IF NOT EXISTS regime_daily (
+    date            DATE    NOT NULL PRIMARY KEY,
+    composite_score REAL,
+    verdict         TEXT,    -- 'Expansion', 'Recovery', 'Slowdown', 'Recession'
+    regime_changed  BOOLEAN DEFAULT 0,
+    factor_z_scores TEXT,    -- JSON: {factor_name: zscore}
+    narrative       TEXT,
+    last_shift_date DATE,
+    source_health   TEXT,    -- JSON: {factor: status}
+    created_at      DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX IF NOT EXISTS idx_rd_verdict ON regime_daily(verdict);
 """
 
 
