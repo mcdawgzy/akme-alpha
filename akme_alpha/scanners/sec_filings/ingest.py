@@ -55,10 +55,16 @@ def discover_filings(target_date: dt.date) -> list[dict]:
     Each entry: {cik, accession, filer_name, form, filed_date, idx_path}
     """
     url = _idx_url(target_date)
-    resp = httpx.get(url, headers={"User-Agent": SEC_USER_AGENT}, timeout=30)
-    if resp.status_code in (404, 403):
+    try:
+        resp = httpx.get(url, headers={"User-Agent": SEC_USER_AGENT}, timeout=30)
+    except (httpx.HTTPStatusError, httpx.ConnectError, httpx.TimeoutException):
+        # Network issues or 4xx/5xx errors - skip this date
         return []
-    resp.raise_for_status()
+    if resp.status_code in (404, 403, 503):
+        # 404: no index file for this date (weekend/holiday)
+        # 403: rate limited or blocked
+        # 503: SEC service unavailable
+        return []
 
     lines = resp.text.splitlines()
     results = []
@@ -69,20 +75,21 @@ def discover_filings(target_date: dt.date) -> list[dict]:
         if len(parts) < 5:
             continue
         cik = parts[0]
-        # SEC CIKs in the daily index are variable length
-        # Strip leading zeros for consistent comparison with WATCHLIST_CIKS
-        cik_stripped = cik.lstrip('0') or '0'
+        # SEC CIKs in the daily index are NOT zero-padded (e.g., "937567")
+        # WATCHLIST_CIKS uses zero-padded format (e.g., "0000937567")
+        # Pad the index CIK to 10 digits for consistent comparison
+        cik_padded = cik.zfill(10) if cik.isdigit() else cik
         if not cik.isdigit():
             continue
         form = parts[2]
         if form not in FILING_FORMS:
             continue
-        if cik_stripped not in WATCHLIST_CIKS:
+        if cik_padded not in WATCHLIST_CIKS:
             continue
         # idx_path like: edgar/data/1009016/0001193125-26-422223.txt
         idx_path = parts[4]
         results.append({
-            "cik": cik_stripped,
+            "cik": cik_padded,  # Store padded version for consistency
             "accession": idx_path.split("/")[-1].replace(".txt", ""),
             "filer_name": parts[1],
             "form": form,

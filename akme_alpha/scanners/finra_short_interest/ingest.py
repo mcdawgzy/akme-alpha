@@ -78,13 +78,23 @@ def _next_settlement_candidates(target: dt.date) -> list[str]:
 
     Publication lags settlement by ~7 business days, so if we're checking
     on date X, the most recent published data is from ~7 business days ago.
+    
+    Look back 45 days to ensure we capture settlement dates from the 
+    previous quarter (Q3 when we're in Q4) which may have published data.
     """
     candidates = []
-    for offset in range(0, 15):
+    for offset in range(0, 45):
         d = target - dt.timedelta(days=offset)
         year, quarter = d.year, (d.month - 1) // 3 + 1
         candidates.extend(settlement_dates(year, quarter))
-    return candidates
+    # Deduplicate candidates
+    seen = set()
+    result = []
+    for c in candidates:
+        if c not in seen:
+            seen.add(c)
+            result.append(c)
+    return result
 
 
 # ── FINRA CSV fetching ────────────────────────────────────────────────────
