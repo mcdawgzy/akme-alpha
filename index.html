@@ -175,7 +175,7 @@
     <script>
         async function loadRegime() {
             try {
-                const r = await fetch('https://cdn.jsdelivr.net/gh/mcdawgzy/akme-alpha@main/regime_latest.json');
+                const r = await fetch('https://cdn.jsdelivr.net/gh/mcdawgzy/akme-alpha@master/regime_latest.json');
                 if (!r.ok) throw new Error('Regime data unavailable');
                 const data = await r.json();
 
