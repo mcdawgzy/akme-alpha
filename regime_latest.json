@@ -1,7 +1,7 @@
 {
   "date": "2026-10-22",
   "verdict": "Slowdown",
-  "composite_score": -0.187,
+  "composite_score": -0.189,
   "narrative": "Market regime holds at Slowdown (composite: -0.19). Drivers: growth_value (-1.5σ), credit_spreads (+1.3σ), yield_curve (+1.3σ). Defensive rotation likely. Increase cash and quality duration exposure.",
   "top_drivers": [
     "growth_value: -1.5σ",
@@ -14,7 +14,7 @@
     "valuation_cape": -0.44,
     "growth_value": -1.499,
     "momentum": -0.674,
-    "yield_curve": 1.282,
+    "yield_curve": 1.27,
     "credit_spreads": 1.338,
     "commodities": -0.485,
     "fx_strength": 0.948
