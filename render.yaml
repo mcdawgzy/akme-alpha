@@ -9,33 +9,30 @@ services:
       - key: PYTHONPATH
         value: "."
       - key: FRED_API_KEY
-        value: "your_32_char_fred_key_here"  # Replace with real key for CPI/PPI data
-    # Rate limiting: API keys stored in SQLite, counts tracked daily
+        value: "your_32_char_fred_key_here"
     autoDeploy: true
     healthCheckPath: /api/health
-    # Scale to zero after 15 min idle (Render free tier behavior)
-    # Pre-warm with keep-alive cron job if available
 
 cron:
   - name: yield-curve-daily
-    schedule: "0 6 * * *"  # 6 AM UTC+10 daily
+    schedule: "0 6 * * *"
     job: python /opt/render/project/scripts/run_yield_curve_daily.py
 
   - name: 13f-daily
-    schedule: "0 6 * * *"  # 6 AM UTC+10 daily (Mon-Fri for latest filings)
+    schedule: "0 6 * * *"
     job: python /opt/render/project/scripts/run_13f_daily.py
 
   - name: si-daily
-    schedule: "0 6 * * *"  # 6 AM UTC+10 daily
+    schedule: "0 6 * * *"
     job: python /opt/render/project/scripts/run_short_interest_daily.py
 
   - name: si-quarterly
-    schedule: "0 6 15 2,5,8,11 *"  # 6 AM UTC+10 quarterly
+    schedule: "0 6 15 2,5,8,11 *"
     job: python /opt/render/project/scripts/run_13f_quarterly.py
 
-# Disk: SQLite DB at /opt/render/project/akme_alpha/data/
-# Free tier: 512MB RAM, 1GB disk, 100GB bandwidth/month
-# Cold start: ~30s first request (DB init + uvicorn spin-up)
+  - name: regime-indicator
+    schedule: "0 6:30 * * *"
+    job: python /opt/render/project/scripts/regime_indicator.py
 
-# Database is seeded in repo (akme_alpha/data/akme_alpha.db)
-# No persistence needed for read-only API endpoint
+# Database: Downloaded from GitHub Release on cold-start (v1.0.0)
+# Free tier: 512MB RAM, 1GB disk, 100GB bandwidth/month
