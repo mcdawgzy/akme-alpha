@@ -1,0 +1,63 @@
+{
+  "study": "Open-Range Fade Mean Reversion",
+  "tickers": ["AAPL","MSFT","NVDA","AMZN","META","TSLA","JPM","SPY","QQQ"],
+  "period": "30 trading days (Sep 25 - Oct 22, 2026)",
+  "capital": "$10,000",
+  "rules": "1. Day Open = RTH opening price. 2. ATR = 14-day True Range (daily bars). 3. Phase 1: track max excursion from open. 4. Phase 2: enter SHORT when price retraces to within 0.2xATR above open (after moving 0.5xATR up). Enter LONG when price retraces to within 0.2xATR below open (after moving 0.5xATR down). 5. Stop = 1xATR from entry. 6. Exit at 3:55 PM ET or stop hit.",
+  "results": {
+    "name": "MeanReversion_OpenFade",
+    "trades": 18,
+    "win_rate": 55.6,
+    "total_return_pct": 0.8,
+    "profit_factor": 1.10,
+    "avg_win": 88.98,
+    "avg_loss": -100.92,
+    "max_drawdown_pct": 4.7,
+    "median_trade": 5.81,
+    "max_consecutive_wins": 3,
+    "max_consecutive_losses": 2
+  },
+  "per_ticker": {
+    "AAPL": {"trades": 3, "wins": 2, "total_pnl": 101.21},
+    "MSFT": {"trades": 1, "wins": 0, "total_pnl": -4.67},
+    "NVDA": {"trades": 3, "wins": 3, "total_pnl": 267.72},
+    "AMZN": {"trades": 1, "wins": 1, "total_pnl": 57.96},
+    "META": {"trades": 4, "wins": 2, "total_pnl": -0.15},
+    "TSLA": {"trades": 1, "wins": 0, "total_pnl": -47.83},
+    "JPM": {"trades": 3, "wins": 2, "total_pnl": -53.71},
+    "SPY": {"trades": 1, "wins": 0, "total_pnl": -103.38},
+    "QQQ": {"trades": 1, "wins": 1, "total_pnl": 11.23}
+  },
+  "trades": [
+    {"date": "2026-10-16", "ticker": "AAPL", "dir": "long", "entry": 344.82, "exit": 343.46, "pnl": -100.90, "reason": "eod"},
+    {"date": "2026-10-19", "ticker": "AAPL", "dir": "short", "entry": 342.59, "exit": 343.14, "pnl": -42.86, "reason": "eod"},
+    {"date": "2026-10-22", "ticker": "AAPL", "dir": "long", "entry": 345.53, "exit": 348.00, "pnl": 203.01, "reason": "eod"},
+    {"date": "2026-10-20", "ticker": "MSFT", "dir": "long", "entry": 531.68, "exit": 531.57, "pnl": -4.67, "reason": "eod"},
+    {"date": "2026-10-19", "ticker": "NVDA", "dir": "long", "entry": 217.09, "exit": 217.45, "pnl": 31.35, "reason": "eod"},
+    {"date": "2026-10-20", "ticker": "NVDA", "dir": "long", "entry": 215.20, "exit": 216.57, "pnl": 118.83, "reason": "eod"},
+    {"date": "2026-10-21", "ticker": "NVDA", "dir": "long", "entry": 220.57, "exit": 221.96, "pnl": 117.54, "reason": "eod"},
+    {"date": "2026-10-21", "ticker": "AMZN", "dir": "long", "entry": 261.84, "exit": 262.59, "pnl": 57.96, "reason": "eod"},
+    {"date": "2026-10-19", "ticker": "META", "dir": "long", "entry": 701.86, "exit": 706.54, "pnl": 109.42, "reason": "eod"},
+    {"date": "2026-10-20", "ticker": "META", "dir": "long", "entry": 690.02, "exit": 693.49, "pnl": 79.33, "reason": "eod"},
+    {"date": "2026-10-21", "ticker": "META", "dir": "short", "entry": 694.49, "exit": 698.41, "pnl": -86.89, "reason": "eod"},
+    {"date": "2026-10-22", "ticker": "META", "dir": "long", "entry": 660.00, "exit": 649.47, "pnl": -206.01, "reason": "eod"},
+    {"date": "2026-10-22", "ticker": "TSLA", "dir": "short", "entry": 377.14, "exit": 378.29, "pnl": -47.83, "reason": "eod"},
+    {"date": "2026-10-16", "ticker": "JPM", "dir": "short", "entry": 340.65, "exit": 338.68, "pnl": 160.73, "reason": "eod"},
+    {"date": "2026-10-20", "ticker": "JPM", "dir": "short", "entry": 335.15, "exit": 335.14, "pnl": 0.39, "reason": "eod"},
+    {"date": "2026-10-22", "ticker": "JPM", "dir": "short", "entry": 333.42, "exit": 336.05, "pnl": -214.83, "reason": "eod"},
+    {"date": "2026-10-22", "ticker": "SPY", "dir": "long", "entry": 765.28, "exit": 763.77, "pnl": -103.38, "reason": "eod"},
+    {"date": "2026-10-20", "ticker": "QQQ", "dir": "short", "entry": 717.35, "exit": 717.10, "pnl": 11.23, "reason": "eod"}
+  ],
+  "biases": [
+    "Fill assumptions: entry at bar close is optimistic",
+    "No transaction costs (would erode 0.8% return)",
+    "30 days = insufficient sample (18 trades vs 100+ minimum for confidence)",
+    "Survivorship: only living tickers",
+    "Look-ahead: ATR uses prior 14 daily bars — no leakage into entry"
+  ],
+  "comparison_to_orb": {
+    "orb_winner": "15-min ORB long-only: PF 1.00, -0.9% return, 180 trades, 47.8% WR",
+    "mr_result": "PF 1.10, +0.8% return, 18 trades, 55.6% WR",
+    "takeaway": "Mean reversion > ORB: fewer trades, better WR, lower DD, positive return"
+  }
+}
