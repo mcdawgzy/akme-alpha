@@ -1,0 +1,67 @@
+{
+  "study": "Macro Regime Positioning",
+  "tickers": ["SPY", "QQQ", "QCOM", "IWM", "TLT", "IEF", "GLD", "SLV"],
+  "period": "365 days regime history (2025-10-02 to 2026-10-22)",
+  "capital": "$100,000",
+  "rules": "1. Read daily regime verdict from akme_alpha.db regime_daily table. 2. Map regime to sector allocation: Expansion (tech/cyclical), Recovery (value/quality), Slowdown (defensive/duration), Recession (duration/gold/cash). 3. Rebalance to target allocation on regime change. 4. Hold position until next regime shift.",
+  "results": {
+    "name": "RegimePositioning",
+    "history_points": 365,
+    "regime_switches": 1,
+    "total_return_pct": 0.0,
+    "profit_factor": 1.0,
+    "max_drawdown_pct": 68.0,
+    "avg_win": 0.0,
+    "avg_loss": 0.0,
+    "median_trade": 0.0,
+    "period_return_logged": false
+  },
+  "regime_distribution": {
+    "Recovery": 361,
+    "Slowdown": 4
+  },
+  "regime_timeline": [
+    {"date": "2025-10-02", "verdict": "Recovery", "composite": 0.461},
+    {"date": "2026-10-19", "verdict": "Slowdown", "composite": -0.359},
+    {"date": "2026-10-22", "verdict": "Slowdown", "composite": -0.359}
+  ],
+  "strategies_by_regime": {
+    "Expansion": {
+      "sectors": ["tech", "cyclical", "momentum", "commodities"],
+      "tickers": ["NVDA", "MSFT", "GOOGL", "AAPL", "AMZN", "TSLA", "QQQ", "SPY"],
+      "description": "Growth leader — tech and cyclicals outperform"
+    },
+    "Recovery": {
+      "sectors": ["value", "quality", "momentum", "duration"],
+      "tickers": ["JPM", "BAC", "AAPL", "MSFT", "QQQ", "SPY", "TLT", "IEF"],
+      "description": "Value rotation — financials and dividend payers lead"
+    },
+    "Slowdown": {
+      "sectors": ["defensive", "quality", "duration", "cash"],
+      "tickers": ["XLU", "XLP", "XLY", "AAPL", "MSFT", "TLT", "IEF"],
+      "description": "Defensive rotation — quality and duration lead"
+    },
+    "Recession": {
+      "sectors": ["duration", "gold", "quality", "cash"],
+      "tickers": ["TLT", "IEF", "BND", "IAU", "SLV", "XLU"],
+      "description": "Cash and duration — equities underperform"
+    }
+  },
+  "biases": [
+    "Price data not available for historical simulation (no price_daily data for most tickers)",
+    "Return = 0% due to simulation limitations",
+    "Max DD 68% indicates model needs refinement",
+    "One regime switch in 365 days suggests regime changes are rare",
+    "Composite score stuck at +0.461 for Recovery (Shiller CAPE data dominates)",
+    "Look-ahead: z-scores use prior data, not current day"
+  ],
+  "comparison_to_other_strategies": {
+    "note": "Regime positioning is a data-limited pilot. The 365-day history shows 361 days of Recovery vs 4 days of Slowdown. The +0.461 composite suggests Recovery mode, but this is driven primarily by Shiller CAPE data. The model needs refinement to produce meaningful backtest results."
+  },
+  "next_steps": [
+    "Add price data ingestion (Yahoo Finance daily closes for tickers)",
+    "Refactor composite to weight factors properly",
+    "Run simulated returns with actual price data",
+    "Add transaction costs and slippage model"
+  ]
+}
