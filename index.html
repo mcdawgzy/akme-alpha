@@ -163,24 +163,50 @@
 
     <div class="divider"></div>
 
-    <div class="card">
-        <h2>Strategy Backtests</h2>
-        <div class="features">
-            <div class="feature">
-                <span class="tag">FREE</span>
-                <span class="name">Opening Range Breakout — 15-min ORB, long-only (PF 1.00, 30 days)</span>
+        <div class="card">
+            <h2>Data Vault</h2>
+            <div class="features">
+                <div class="feature">
+                    <span class="tag">FREE</span>
+                    <span class="name">Regime Yield Curve History (367 days)</span>
+                </div>
+                <div class="feature">
+                    <span class="tag">FREE</span>
+                    <span class="name"><a href="https://cdn.jsdelivr.net/gh/mcdawgzy/akme-alpha@master/data_vault/regime_yield_curve_history.csv" style="color: #c9a24e; text-decoration: none;">regime_yield_curve_history.csv</a></span>
+                </div>
+                <div class="feature">
+                    <span class="tag">FREE</span>
+                    <span class="name">Short Interest (19 tickers)</span>
+                </div>
+                <div class="feature">
+                    <span class="tag">FREE</span>
+                    <span class="name"><a href="https://cdn.jsdelivr.net/gh/mcdawgzy/akme-alpha@master/data_vault/short_interest_latest.csv" style="color: #c9a24e; text-decoration: none;">short_interest_latest.csv</a></span>
+                </div>
             </div>
-            <div class="feature">
-                <span class="tag">FREE</span>
-                <span class="name">Raw results → <a href="https://cdn.jsdelivr.net/gh/mcdawgzy/akme-alpha@master/orb_backtest_results.json" style="color: #c9a24e; text-decoration: none;">orb_backtest_results.json</a></span>
+            <div class="summary" style="margin-top: 16px;">
+                Pre-computed CSVs from the unified purrtfolio.db database. Each file includes
+                a reproducible Python ingest script in the GitHub repo.
             </div>
         </div>
-        <div class="summary" style="margin-top: 16px;">
-            Tested 5 ORB variants across 16 large-cap tickers. The 15-min long-only
-            variant is the only one that breaks even — shorter/no filters, no shorts.
-            Full bias audit included in the data.
+
+        <div class="card">
+            <h2>Strategy Backtests</h2>
+            <div class="features">
+                <div class="feature">
+                    <span class="tag">FREE</span>
+                    <span class="name">Opening Range Breakout — 15-min ORB, long-only (PF 1.00, 30 days)</span>
+                </div>
+                <div class="feature">
+                    <span class="tag">FREE</span>
+                    <span class="name"><a href="https://cdn.jsdelivr.net/gh/mcdawgzy/akme-alpha@master/orb_backtest_results.json" style="color: #c9a24e; text-decoration: none;">orb_backtest_results.json</a></span>
+                </div>
+            </div>
+            <div class="summary" style="margin-top: 16px;">
+                Tested 5 ORB variants across 16 large-cap tickers. The 15-min long-only
+                variant is the only one that breaks even — shorter/no filters, no shorts.
+                Full bias audit included in the data.
+            </div>
         </div>
-    </div>
 
     <div class="cta-section">
         <a href="https://api.purrtfolio.com" target="_blank">Get API Access →</a>
