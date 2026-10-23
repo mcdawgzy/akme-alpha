@@ -1,0 +1,368 @@
+date,spread_3m10,spread_5y10,spread_3m30,regime,classification,zscore_3m10,y10_level_6m,notes
+2026-10-22,93.1,18.5,126.5,NORMAL,risk_on,1.091,64.3,"Normal upward slope (3m10s = +93bp, 10y=4.953%). Risk-on regime; term premium adequate."
+2026-10-20,103.7,18.2,134.5,NORMAL,risk_on,1.419,79.4,"Normal upward slope (3m10s = +104bp, 10y=5.117%). Risk-on regime; term premium adequate."
+2026-10-19,102.5,20.1,136.7,NORMAL,risk_on,1.383,80.6,"Normal upward slope (3m10s = +102bp, 10y=5.1%). Risk-on regime; term premium adequate."
+2026-10-16,102.8,19.9,136.6,NORMAL,risk_on,1.403,85.2,"Normal upward slope (3m10s = +103bp, 10y=5.098%). Risk-on regime; term premium adequate."
+2026-10-15,100.1,19.0,134.1,NORMAL,risk_on,1.33,84.3,"Normal upward slope (3m10s = +100bp, 10y=5.089%). Risk-on regime; term premium adequate."
+2026-10-14,110.5,19.8,144.0,NORMAL,risk_on,1.654,94.4,"Normal upward slope (3m10s = +110bp, 10y=5.19%). Risk-on regime; term premium adequate."
+2026-10-13,116.0,21.0,150.6,NORMAL,risk_on,1.832,90.8,"Normal upward slope (3m10s = +116bp, 10y=5.217%). Risk-on regime; term premium adequate."
+2026-10-12,119.0,22.1,154.8,NORMAL,risk_on,1.936,95.8,"Normal upward slope (3m10s = +119bp, 10y=5.24%). Risk-on regime; term premium adequate."
+2026-10-09,118.7,22.3,154.3,NORMAL,risk_on,1.939,92.7,"Normal upward slope (3m10s = +119bp, 10y=5.244%). Risk-on regime; term premium adequate."
+2026-10-08,118.8,24.0,156.3,NORMAL,risk_on,1.958,91.4,"Normal upward slope (3m10s = +119bp, 10y=5.231%). Risk-on regime; term premium adequate."
+2026-10-07,124.0,25.6,162.4,NORMAL,risk_on,2.134,96.0,"Normal upward slope (3m10s = +124bp, 10y=5.277%). Risk-on regime; term premium adequate."
+2026-10-06,123.2,24.1,160.4,NORMAL,risk_on,2.129,97.6,"Normal upward slope (3m10s = +123bp, 10y=5.269%). Risk-on regime; term premium adequate."
+2026-10-05,129.3,24.5,164.7,NORMAL,risk_on,2.339,102.0,"Normal upward slope (3m10s = +129bp, 10y=5.311%). Risk-on regime; term premium adequate."
+2026-10-02,128.4,22.2,163.7,NORMAL,risk_on,2.33,96.4,"Normal upward slope (3m10s = +128bp, 10y=5.277%). Risk-on regime; term premium adequate."
+2026-10-01,125.5,23.2,162.1,NORMAL,risk_on,2.259,92.4,"Normal upward slope (3m10s = +126bp, 10y=5.237%). Risk-on regime; term premium adequate."
+2026-09-30,126.3,20.4,160.8,NORMAL,risk_on,2.301,98.0,"Normal upward slope (3m10s = +126bp, 10y=5.293%). Risk-on regime; term premium adequate."
+2026-09-29,119.0,19.2,152.9,NORMAL,risk_on,2.084,94.2,"Normal upward slope (3m10s = +119bp, 10y=5.255%). Risk-on regime; term premium adequate."
+2026-09-28,118.3,17.2,150.4,NORMAL,risk_on,2.074,92.1,"Normal upward slope (3m10s = +118bp, 10y=5.24%). Risk-on regime; term premium adequate."
+2026-09-25,111.4,17.7,143.4,NORMAL,risk_on,1.864,74.4,"Normal upward slope (3m10s = +111bp, 10y=5.184%). Risk-on regime; term premium adequate."
+2026-09-24,109.4,13.7,139.3,NORMAL,risk_on,1.811,72.2,"Normal upward slope (3m10s = +109bp, 10y=5.162%). Risk-on regime; term premium adequate."
+2026-09-23,108.6,11.7,137.3,NORMAL,risk_on,1.792,67.4,"Normal upward slope (3m10s = +109bp, 10y=5.114%). Risk-on regime; term premium adequate."
+2026-09-22,96.3,12.6,129.8,NORMAL,risk_on,1.401,55.2,"Normal upward slope (3m10s = +96bp, 10y=4.968%). Risk-on regime; term premium adequate."
+2026-09-21,98.1,12.9,131.4,NORMAL,risk_on,1.467,63.5,"Normal upward slope (3m10s = +98bp, 10y=4.963%). Risk-on regime; term premium adequate."
+2026-09-18,102.0,14.2,135.3,NORMAL,risk_on,1.6,60.7,"Normal upward slope (3m10s = +102bp, 10y=4.998%). Risk-on regime; term premium adequate."
+2026-09-17,98.2,14.6,133.1,NORMAL,risk_on,1.486,55.6,"Normal upward slope (3m10s = +98bp, 10y=4.947%). Risk-on regime; term premium adequate."
+2026-09-16,103.6,14.7,137.9,NORMAL,risk_on,1.671,61.5,"Normal upward slope (3m10s = +104bp, 10y=5.006%). Risk-on regime; term premium adequate."
+2026-09-15,103.6,17.0,140.4,NORMAL,risk_on,1.68,71.5,"Normal upward slope (3m10s = +104bp, 10y=4.996%). Risk-on regime; term premium adequate."
+2026-09-14,102.6,17.1,139.4,NORMAL,risk_on,1.657,70.2,"Normal upward slope (3m10s = +103bp, 10y=4.961%). Risk-on regime; term premium adequate."
+2026-09-11,106.2,18.4,144.1,NORMAL,risk_on,1.788,69.0,"Normal upward slope (3m10s = +106bp, 10y=4.975%). Risk-on regime; term premium adequate."
+2026-09-10,109.9,21.1,151.6,NORMAL,risk_on,1.921,65.9,"Normal upward slope (3m10s = +110bp, 10y=4.944%). Risk-on regime; term premium adequate."
+2026-09-09,103.2,22.3,148.1,NORMAL,risk_on,1.709,55.2,"Normal upward slope (3m10s = +103bp, 10y=4.837%). Risk-on regime; term premium adequate."
+2026-09-08,103.1,23.3,148.9,NORMAL,risk_on,1.716,53.3,"Normal upward slope (3m10s = +103bp, 10y=4.806%). Risk-on regime; term premium adequate."
+2026-09-04,102.7,23.4,148.9,NORMAL,risk_on,1.712,65.1,"Normal upward slope (3m10s = +103bp, 10y=4.784%). Risk-on regime; term premium adequate."
+2026-09-03,102.2,25.3,150.3,NORMAL,risk_on,1.706,62.9,"Normal upward slope (3m10s = +102bp, 10y=4.762%). Risk-on regime; term premium adequate."
+2026-09-02,102.4,24.4,149.5,NORMAL,risk_on,1.722,66.3,"Normal upward slope (3m10s = +102bp, 10y=4.796%). Risk-on regime; term premium adequate."
+2026-09-01,102.4,23.9,149.6,NORMAL,risk_on,1.733,65.0,"Normal upward slope (3m10s = +102bp, 10y=4.796%). Risk-on regime; term premium adequate."
+2026-08-31,102.6,25.1,151.7,NORMAL,risk_on,1.749,67.8,"Normal upward slope (3m10s = +103bp, 10y=4.758%). Risk-on regime; term premium adequate."
+2026-08-28,99.0,23.9,147.6,NORMAL,risk_on,1.637,75.8,"Normal upward slope (3m10s = +99bp, 10y=4.72%). Risk-on regime; term premium adequate."
+2026-08-27,99.4,27.6,151.3,NORMAL,risk_on,1.659,71.0,"Normal upward slope (3m10s = +99bp, 10y=4.672%). Risk-on regime; term premium adequate."
+2026-08-26,97.4,28.3,149.6,NORMAL,risk_on,1.599,70.2,"Normal upward slope (3m10s = +97bp, 10y=4.664%). Risk-on regime; term premium adequate."
+2026-08-25,93.4,28.8,146.9,NORMAL,risk_on,1.472,62.2,"Normal upward slope (3m10s = +93bp, 10y=4.639%). Risk-on regime; term premium adequate."
+2026-08-24,100.1,29.6,152.8,NORMAL,risk_on,1.712,65.6,"Normal upward slope (3m10s = +100bp, 10y=4.704%). Risk-on regime; term premium adequate."
+2026-08-21,102.8,31.4,156.6,NORMAL,risk_on,1.814,65.2,"Normal upward slope (3m10s = +103bp, 10y=4.738%). Risk-on regime; term premium adequate."
+2026-08-20,99.3,30.9,153.4,NORMAL,risk_on,1.703,61.0,"Normal upward slope (3m10s = +99bp, 10y=4.696%). Risk-on regime; term premium adequate."
+2026-08-19,95.3,30.0,149.4,NORMAL,risk_on,1.576,56.7,"Normal upward slope (3m10s = +95bp, 10y=4.653%). Risk-on regime; term premium adequate."
+2026-08-18,100.1,33.9,158.0,NORMAL,risk_on,1.753,63.1,"Normal upward slope (3m10s = +100bp, 10y=4.706%). Risk-on regime; term premium adequate."
+2026-08-17,102.1,34.8,160.6,NORMAL,risk_on,1.834,64.5,"Normal upward slope (3m10s = +102bp, 10y=4.724%). Risk-on regime; term premium adequate."
+2026-08-14,99.9,33.4,156.8,NORMAL,risk_on,1.766,64.0,"Normal upward slope (3m10s = +100bp, 10y=4.696%). Risk-on regime; term premium adequate."
+2026-08-13,93.6,32.8,150.8,NORMAL,risk_on,1.557,58.5,"Normal upward slope (3m10s = +94bp, 10y=4.641%). Risk-on regime; term premium adequate."
+2026-08-12,97.5,30.7,154.0,NORMAL,risk_on,1.703,62.6,"Normal upward slope (3m10s = +98bp, 10y=4.682%). Risk-on regime; term premium adequate."
+2026-08-11,95.4,29.9,150.6,NORMAL,risk_on,1.64,58.0,"Normal upward slope (3m10s = +95bp, 10y=4.684%). Risk-on regime; term premium adequate."
+2026-08-10,98.1,29.4,152.5,NORMAL,risk_on,1.744,52.7,"Normal upward slope (3m10s = +98bp, 10y=4.699%). Risk-on regime; term premium adequate."
+2026-08-07,95.0,29.8,150.1,NORMAL,risk_on,1.645,45.4,"Normal upward slope (3m10s = +95bp, 10y=4.66%). Risk-on regime; term premium adequate."
+2026-08-06,93.8,28.1,148.1,NORMAL,risk_on,1.61,46.4,"Normal upward slope (3m10s = +94bp, 10y=4.67%). Risk-on regime; term premium adequate."
+2026-08-05,89.2,29.3,144.9,NORMAL,risk_on,1.455,41.1,"Normal upward slope (3m10s = +89bp, 10y=4.617%). Risk-on regime; term premium adequate."
+2026-08-04,89.7,29.4,146.0,NORMAL,risk_on,1.484,41.7,"Normal upward slope (3m10s = +90bp, 10y=4.627%). Risk-on regime; term premium adequate."
+2026-08-03,98.6,28.6,153.1,NORMAL,risk_on,1.816,41.1,"Normal upward slope (3m10s = +99bp, 10y=4.686%). Risk-on regime; term premium adequate."
+2026-07-31,106.3,28.5,159.3,NORMAL,risk_on,2.105,50.4,"Normal upward slope (3m10s = +106bp, 10y=4.745%). Risk-on regime; term premium adequate."
+2026-07-30,98.8,28.8,153.3,NORMAL,risk_on,1.848,42.2,"Normal upward slope (3m10s = +99bp, 10y=4.663%). Risk-on regime; term premium adequate."
+2026-07-29,96.4,27.0,148.5,NORMAL,risk_on,1.768,38.1,"Normal upward slope (3m10s = +96bp, 10y=4.622%). Risk-on regime; term premium adequate."
+2026-07-28,84.4,24.3,133.6,NORMAL,risk_on,1.343,37.7,"Normal upward slope (3m10s = +84bp, 10y=4.604%). Risk-on regime; term premium adequate."
+2026-07-27,84.4,24.4,132.8,NORMAL,risk_on,1.35,39.0,"Normal upward slope (3m10s = +84bp, 10y=4.641%). Risk-on regime; term premium adequate."
+2026-07-24,87.4,25.3,135.7,NORMAL,risk_on,1.467,44.0,"Normal upward slope (3m10s = +87bp, 10y=4.679%). Risk-on regime; term premium adequate."
+2026-07-23,90.3,24.2,137.1,NORMAL,risk_on,1.581,46.4,"Normal upward slope (3m10s = +90bp, 10y=4.703%). Risk-on regime; term premium adequate."
+2026-07-22,91.2,25.0,140.2,NORMAL,risk_on,1.623,41.8,"Normal upward slope (3m10s = +91bp, 10y=4.657%). Risk-on regime; term premium adequate."
+2026-07-21,89.8,25.8,140.0,NORMAL,risk_on,1.581,37.9,"Normal upward slope (3m10s = +90bp, 10y=4.628%). Risk-on regime; term premium adequate."
+2026-07-20,89.3,27.0,141.3,NORMAL,risk_on,1.57,34.5,"Normal upward slope (3m10s = +89bp, 10y=4.598%). Risk-on regime; term premium adequate."
+2026-07-17,83.4,26.8,135.7,NORMAL,risk_on,1.362,31.0,"Normal upward slope (3m10s = +83bp, 10y=4.541%). Risk-on regime; term premium adequate."
+2026-07-16,87.2,28.7,140.1,NORMAL,risk_on,1.509,33.8,"Normal upward slope (3m10s = +87bp, 10y=4.569%). Risk-on regime; term premium adequate."
+2026-07-15,85.7,29.0,139.5,NORMAL,risk_on,1.463,31.4,"Normal upward slope (3m10s = +86bp, 10y=4.545%). Risk-on regime; term premium adequate."
+2026-07-14,88.5,26.4,139.4,NORMAL,risk_on,1.575,42.5,"Normal upward slope (3m10s = +88bp, 10y=4.585%). Risk-on regime; term premium adequate."
+2026-07-13,88.1,24.6,137.0,NORMAL,risk_on,1.569,46.9,"Normal upward slope (3m10s = +88bp, 10y=4.609%). Risk-on regime; term premium adequate."
+2026-07-10,87.4,26.1,137.6,NORMAL,risk_on,1.551,39.8,"Normal upward slope (3m10s = +87bp, 10y=4.569%). Risk-on regime; term premium adequate."
+2026-07-09,85.7,27.0,137.1,NORMAL,risk_on,1.496,36.8,"Normal upward slope (3m10s = +86bp, 10y=4.539%). Risk-on regime; term premium adequate."
+2026-07-08,84.6,26.1,134.2,NORMAL,risk_on,1.461,39.8,"Normal upward slope (3m10s = +85bp, 10y=4.569%). Risk-on regime; term premium adequate."
+2026-07-07,80.4,27.2,131.8,NORMAL,risk_on,1.311,34.6,"Normal upward slope (3m10s = +80bp, 10y=4.529%). Risk-on regime; term premium adequate."
+2026-07-06,78.9,26.8,130.3,NORMAL,risk_on,1.262,34.1,"Normal upward slope (3m10s = +79bp, 10y=4.479%). Risk-on regime; term premium adequate."
+2026-07-02,81.7,25.5,131.7,NORMAL,risk_on,1.372,29.8,"Normal upward slope (3m10s = +82bp, 10y=4.485%). Risk-on regime; term premium adequate."
+2026-07-01,77.5,24.3,126.6,NORMAL,risk_on,1.218,28.8,"Normal upward slope (3m10s = +78bp, 10y=4.475%). Risk-on regime; term premium adequate."
+2026-06-30,68.6,23.2,117.0,NORMAL,risk_on,0.89,25.5,"Normal upward slope (3m10s = +69bp, 10y=4.418%). Risk-on regime; term premium adequate."
+2026-06-29,69.4,23.0,118.0,NORMAL,risk_on,0.923,21.1,"Normal upward slope (3m10s = +69bp, 10y=4.374%). Risk-on regime; term premium adequate."
+2026-06-26,70.9,24.2,120.1,NORMAL,risk_on,0.982,23.6,"Normal upward slope (3m10s = +71bp, 10y=4.372%). Risk-on regime; term premium adequate."
+2026-06-25,71.2,22.9,117.8,NORMAL,risk_on,0.997,25.6,"Normal upward slope (3m10s = +71bp, 10y=4.392%). Risk-on regime; term premium adequate."
+2026-06-24,71.2,22.6,116.6,NORMAL,risk_on,1.003,26.6,"Normal upward slope (3m10s = +71bp, 10y=4.402%). Risk-on regime; term premium adequate."
+2026-06-23,80.3,23.2,125.0,NORMAL,risk_on,1.349,35.7,"Normal upward slope (3m10s = +80bp, 10y=4.493%). Risk-on regime; term premium adequate."
+2026-06-22,82.9,22.2,126.7,NORMAL,risk_on,1.453,37.3,"Normal upward slope (3m10s = +83bp, 10y=4.509%). Risk-on regime; term premium adequate."
+2026-06-18,79.3,22.6,124.3,NORMAL,risk_on,1.326,30.0,"Normal upward slope (3m10s = +79bp, 10y=4.451%). Risk-on regime; term premium adequate."
+2026-06-17,81.6,23.4,127.9,NORMAL,risk_on,1.419,31.2,"Normal upward slope (3m10s = +82bp, 10y=4.463%). Risk-on regime; term premium adequate."
+2026-06-16,79.8,27.7,129.8,NORMAL,risk_on,1.361,31.2,"Normal upward slope (3m10s = +80bp, 10y=4.428%). Risk-on regime; term premium adequate."
+2026-06-15,85.1,28.1,135.3,NORMAL,risk_on,1.57,31.8,"Normal upward slope (3m10s = +85bp, 10y=4.469%). Risk-on regime; term premium adequate."
+2026-06-12,86.9,27.4,135.7,NORMAL,risk_on,1.648,29.3,"Normal upward slope (3m10s = +87bp, 10y=4.487%). Risk-on regime; term premium adequate."
+2026-06-11,84.0,27.3,132.8,NORMAL,risk_on,1.551,26.9,"Normal upward slope (3m10s = +84bp, 10y=4.463%). Risk-on regime; term premium adequate."
+2026-06-10,90.7,27.8,139.0,NORMAL,risk_on,1.819,34.8,"Normal upward slope (3m10s = +91bp, 10y=4.542%). Risk-on regime; term premium adequate."
+2026-06-09,89.3,27.5,137.6,NORMAL,risk_on,1.781,38.7,"Normal upward slope (3m10s = +89bp, 10y=4.528%). Risk-on regime; term premium adequate."
+2026-06-08,92.4,27.1,139.6,NORMAL,risk_on,1.915,38.8,"Normal upward slope (3m10s = +92bp, 10y=4.552%). Risk-on regime; term premium adequate."
+2026-06-05,91.1,25.6,137.4,NORMAL,risk_on,1.877,39.7,"Normal upward slope (3m10s = +91bp, 10y=4.536%). Risk-on regime; term premium adequate."
+2026-06-04,85.7,28.9,135.8,NORMAL,risk_on,1.681,33.8,"Normal upward slope (3m10s = +86bp, 10y=4.477%). Risk-on regime; term premium adequate."
+2026-06-03,86.8,27.7,136.7,NORMAL,risk_on,1.735,35.2,"Normal upward slope (3m10s = +87bp, 10y=4.491%). Risk-on regime; term premium adequate."
+2026-06-02,83.7,27.8,134.9,NORMAL,risk_on,1.627,34.7,"Normal upward slope (3m10s = +84bp, 10y=4.455%). Risk-on regime; term premium adequate."
+2026-06-01,85.5,28.9,137.1,NORMAL,risk_on,1.71,41.8,"Normal upward slope (3m10s = +86bp, 10y=4.475%). Risk-on regime; term premium adequate."
+2026-05-29,86.5,30.4,140.5,NORMAL,risk_on,1.763,43.6,"Normal upward slope (3m10s = +86bp, 10y=4.453%). Risk-on regime; term premium adequate."
+2026-05-28,86.5,29.5,139.5,NORMAL,risk_on,1.778,43.8,"Normal upward slope (3m10s = +86bp, 10y=4.455%). Risk-on regime; term premium adequate."
+2026-05-27,89.6,30.4,142.6,NORMAL,risk_on,1.919,46.4,"Normal upward slope (3m10s = +90bp, 10y=4.481%). Risk-on regime; term premium adequate."
+2026-05-26,91.1,31.0,144.4,NORMAL,risk_on,2.002,49.5,"Normal upward slope (3m10s = +91bp, 10y=4.493%). Risk-on regime; term premium adequate."
+2026-05-22,97.3,30.2,147.9,NORMAL,risk_on,2.279,49.5,"Normal upward slope (3m10s = +97bp, 10y=4.558%). Risk-on regime; term premium adequate."
+2026-05-21,100.4,32.9,153.0,NORMAL,risk_on,2.438,52.3,"Normal upward slope (3m10s = +100bp, 10y=4.586%). Risk-on regime; term premium adequate."
+2026-05-20,101.5,34.7,155.9,NORMAL,risk_on,2.527,50.9,"Normal upward slope (3m10s = +102bp, 10y=4.572%). Risk-on regime; term premium adequate."
+2026-05-19,109.2,33.7,160.6,NORMAL,risk_on,2.891,56.1,"Normal upward slope (3m10s = +109bp, 10y=4.667%). Risk-on regime; term premium adequate."
+2026-05-18,105.5,34.3,157.9,NORMAL,risk_on,2.776,49.0,"Normal upward slope (3m10s = +106bp, 10y=4.623%). Risk-on regime; term premium adequate."
+2026-05-15,100.7,33.7,154.0,NORMAL,risk_on,2.596,44.7,"Normal upward slope (3m10s = +101bp, 10y=4.595%). Risk-on regime; term premium adequate."
+2026-05-14,87.3,34.0,142.4,NORMAL,risk_on,2.048,31.3,"Normal upward slope (3m10s = +87bp, 10y=4.461%). Risk-on regime; term premium adequate."
+2026-05-13,88.1,35.1,144.7,NORMAL,risk_on,2.102,33.3,"Normal upward slope (3m10s = +88bp, 10y=4.481%). Risk-on regime; term premium adequate."
+2026-05-12,86.0,33.9,142.8,NORMAL,risk_on,2.028,35.1,"Normal upward slope (3m10s = +86bp, 10y=4.463%). Risk-on regime; term premium adequate."
+2026-05-11,81.0,34.2,138.6,NORMAL,risk_on,1.825,34.5,"Normal upward slope (3m10s = +81bp, 10y=4.41%). Risk-on regime; term premium adequate."
+2026-05-08,76.9,35.1,135.2,NORMAL,risk_on,1.661,27.1,"Normal upward slope (3m10s = +77bp, 10y=4.364%). Risk-on regime; term premium adequate."
+2026-05-07,79.4,34.8,137.1,NORMAL,risk_on,1.782,29.9,"Normal upward slope (3m10s = +79bp, 10y=4.392%). Risk-on regime; term premium adequate."
+2026-05-06,75.6,35.4,134.3,NORMAL,risk_on,1.632,26.3,"Normal upward slope (3m10s = +76bp, 10y=4.356%). Risk-on regime; term premium adequate."
+2026-05-05,81.6,34.4,138.4,NORMAL,risk_on,1.916,32.3,"Normal upward slope (3m10s = +82bp, 10y=4.416%). Risk-on regime; term premium adequate."
+2026-05-04,85.6,35.3,143.5,NORMAL,risk_on,2.111,28.9,"Normal upward slope (3m10s = +86bp, 10y=4.446%). Risk-on regime; term premium adequate."
+2026-05-01,80.3,35.7,139.1,NORMAL,risk_on,1.893,27.7,"Normal upward slope (3m10s = +80bp, 10y=4.378%). Risk-on regime; term premium adequate."
+2026-04-30,80.5,36.7,140.2,NORMAL,risk_on,1.923,28.9,"Normal upward slope (3m10s = +80bp, 10y=4.39%). Risk-on regime; term premium adequate."
+2026-04-29,82.8,35.3,139.7,NORMAL,risk_on,2.042,31.7,"Normal upward slope (3m10s = +83bp, 10y=4.418%). Risk-on regime; term premium adequate."
+2026-04-28,76.4,37.1,135.4,NORMAL,risk_on,1.766,26.1,"Normal upward slope (3m10s = +76bp, 10y=4.354%). Risk-on regime; term premium adequate."
+2026-04-27,74.6,38.9,135.2,NORMAL,risk_on,1.696,27.8,"Normal upward slope (3m10s = +75bp, 10y=4.336%). Risk-on regime; term premium adequate."
+2026-04-24,71.7,39.0,132.3,NORMAL,risk_on,1.576,31.3,"Normal upward slope (3m10s = +72bp, 10y=4.31%). Risk-on regime; term premium adequate."
+2026-04-23,72.8,37.1,132.3,NORMAL,risk_on,1.637,32.6,"Normal upward slope (3m10s = +73bp, 10y=4.323%). Risk-on regime; term premium adequate."
+2026-04-22,69.9,37.9,130.7,NORMAL,risk_on,1.514,29.7,"Normal upward slope (3m10s = +70bp, 10y=4.294%). Risk-on regime; term premium adequate."
+2026-04-21,69.4,38.4,130.0,NORMAL,risk_on,1.499,30.1,"Normal upward slope (3m10s = +69bp, 10y=4.292%). Risk-on regime; term premium adequate."
+2026-04-20,65.2,40.0,128.3,NORMAL,risk_on,1.313,29.7,"Normal upward slope (3m10s = +65bp, 10y=4.25%). Risk-on regime; term premium adequate."
+2026-04-17,64.6,40.8,128.5,NORMAL,risk_on,1.296,23.9,"Normal upward slope (3m10s = +65bp, 10y=4.246%). Risk-on regime; term premium adequate."
+2026-04-16,69.9,39.6,131.9,NORMAL,risk_on,1.55,30.2,"Normal upward slope (3m10s = +70bp, 10y=4.309%). Risk-on regime; term premium adequate."
+2026-04-15,67.0,38.6,127.9,NORMAL,risk_on,1.423,27.5,"Normal upward slope (3m10s = +67bp, 10y=4.282%). Risk-on regime; term premium adequate."
+2026-04-14,64.4,38.5,125.6,NORMAL,risk_on,1.313,28.0,"Normal upward slope (3m10s = +64bp, 10y=4.256%). Risk-on regime; term premium adequate."
+2026-04-13,69.4,38.0,129.7,NORMAL,risk_on,1.559,25.1,"Normal upward slope (3m10s = +69bp, 10y=4.297%). Risk-on regime; term premium adequate."
+2026-04-10,72.4,37.8,132.1,NORMAL,risk_on,1.712,26.6,"Normal upward slope (3m10s = +72bp, 10y=4.317%). Risk-on regime; term premium adequate."
+2026-04-09,70.5,37.8,130.9,NORMAL,risk_on,1.635,24.2,"Normal upward slope (3m10s = +70bp, 10y=4.293%). Risk-on regime; term premium adequate."
+2026-04-08,69.1,37.1,128.7,NORMAL,risk_on,1.584,24.0,"Normal upward slope (3m10s = +69bp, 10y=4.291%). Risk-on regime; term premium adequate."
+2026-04-07,72.8,36.7,130.6,NORMAL,risk_on,1.773,19.5,"Normal upward slope (3m10s = +73bp, 10y=4.343%). Risk-on regime; term premium adequate."
+2026-04-06,71.2,35.4,126.8,NORMAL,risk_on,1.711,20.6,"Normal upward slope (3m10s = +71bp, 10y=4.335%). Risk-on regime; term premium adequate."
+2026-04-02,70.6,36.5,128.3,NORMAL,risk_on,1.698,19.4,"Normal upward slope (3m10s = +71bp, 10y=4.313%). Risk-on regime; term premium adequate."
+2026-04-01,71.4,36.4,129.5,NORMAL,risk_on,1.751,20.0,"Normal upward slope (3m10s = +71bp, 10y=4.319%). Risk-on regime; term premium adequate."
+2026-03-31,71.1,36.6,129.1,NORMAL,risk_on,1.756,22.3,"Normal upward slope (3m10s = +71bp, 10y=4.311%). Risk-on regime; term premium adequate."
+2026-03-30,74.4,36.3,130.7,NORMAL,risk_on,1.945,23.6,"Normal upward slope (3m10s = +74bp, 10y=4.342%). Risk-on regime; term premium adequate."
+2026-03-27,83.3,37.0,137.5,NORMAL,risk_on,2.41,25.3,"Normal upward slope (3m10s = +83bp, 10y=4.44%). Risk-on regime; term premium adequate."
+2026-03-26,79.6,32.1,131.6,NORMAL,risk_on,2.247,22.9,"Normal upward slope (3m10s = +80bp, 10y=4.416%). Risk-on regime; term premium adequate."
+2026-03-25,70.8,35.8,127.7,NORMAL,risk_on,1.838,14.1,"Normal upward slope (3m10s = +71bp, 10y=4.328%). Risk-on regime; term premium adequate."
+2026-03-24,77.2,36.2,132.1,NORMAL,risk_on,2.178,22.0,"Normal upward slope (3m10s = +77bp, 10y=4.392%). Risk-on regime; term premium adequate."
+2026-03-23,72.2,38.4,130.0,NORMAL,risk_on,1.955,18.7,"Normal upward slope (3m10s = +72bp, 10y=4.334%). Risk-on regime; term premium adequate."
+2026-03-20,77.3,37.9,134.2,NORMAL,risk_on,2.23,25.2,"Normal upward slope (3m10s = +77bp, 10y=4.391%). Risk-on regime; term premium adequate."
+2026-03-19,66.9,36.2,124.0,NORMAL,risk_on,1.716,14.2,"Normal upward slope (3m10s = +67bp, 10y=4.281%). Risk-on regime; term premium adequate."
+2026-03-18,64.9,39.7,127.1,NORMAL,risk_on,1.623,12.0,"Normal upward slope (3m10s = +65bp, 10y=4.259%). Risk-on regime; term premium adequate."
+2026-03-17,59.7,41.6,124.7,NORMAL,risk_on,1.368,9.8,"Normal upward slope (3m10s = +60bp, 10y=4.202%). Risk-on regime; term premium adequate."
+2026-03-16,61.5,41.7,125.4,NORMAL,risk_on,1.477,14.4,"Normal upward slope (3m10s = +62bp, 10y=4.22%). Risk-on regime; term premium adequate."
+2026-03-13,68.2,41.1,130.5,NORMAL,risk_on,1.839,22.4,"Normal upward slope (3m10s = +68bp, 10y=4.285%). Risk-on regime; term premium adequate."
+2026-03-12,66.8,38.9,128.0,NORMAL,risk_on,1.778,21.2,"Normal upward slope (3m10s = +67bp, 10y=4.273%). Risk-on regime; term premium adequate."
+2026-03-11,60.8,42.6,125.7,NORMAL,risk_on,1.473,14.7,"Normal upward slope (3m10s = +61bp, 10y=4.208%). Risk-on regime; term premium adequate."
+2026-03-10,54.1,42.1,117.6,NORMAL,risk_on,1.132,12.5,"Normal upward slope (3m10s = +54bp, 10y=4.136%). Risk-on regime; term premium adequate."
+2026-03-09,54.3,40.0,114.7,NORMAL,risk_on,1.15,10.4,"Normal upward slope (3m10s = +54bp, 10y=4.136%). Risk-on regime; term premium adequate."
+2026-03-06,56.3,41.8,118.5,NORMAL,risk_on,1.261,4.7,"Normal upward slope (3m10s = +56bp, 10y=4.133%). Risk-on regime; term premium adequate."
+2026-03-05,55.8,40.3,116.4,NORMAL,risk_on,1.239,6.0,"Normal upward slope (3m10s = +56bp, 10y=4.146%). Risk-on regime; term premium adequate."
+2026-03-04,48.5,41.2,112.1,NORMAL,neutral,0.862,-0.6,"Normal upward slope (3m10s = +48bp, 10y=4.08%). Risk-on regime; term premium adequate."
+2026-03-03,46.1,42.5,110.7,NORMAL,neutral,0.739,-12.0,"Normal upward slope (3m10s = +46bp, 10y=4.056%). Risk-on regime; term premium adequate."
+2026-03-02,45.8,42.7,110.8,NORMAL,neutral,0.724,-16.3,"Normal upward slope (3m10s = +46bp, 10y=4.048%). Risk-on regime; term premium adequate."
+2026-02-27,38.4,45.0,105.5,NORMAL,neutral,0.343,-26.5,"Normal upward slope (3m10s = +38bp, 10y=3.962%). Risk-on regime; term premium adequate."
+2026-02-26,42.9,43.4,108.1,NORMAL,neutral,0.579,-21.0,"Normal upward slope (3m10s = +43bp, 10y=4.017%). Risk-on regime; term premium adequate."
+2026-02-25,46.0,42.9,110.6,NORMAL,neutral,0.741,-17.9,"Normal upward slope (3m10s = +46bp, 10y=4.048%). Risk-on regime; term premium adequate."
+2026-02-24,44.5,43.5,110.1,NORMAL,neutral,0.666,-17.4,"Normal upward slope (3m10s = +44bp, 10y=4.033%). Risk-on regime; term premium adequate."
+2026-02-23,44.1,44.7,110.8,NORMAL,neutral,0.65,-20.9,"Normal upward slope (3m10s = +44bp, 10y=4.029%). Risk-on regime; term premium adequate."
+2026-02-20,49.1,43.6,113.0,NORMAL,neutral,0.911,-17.4,"Normal upward slope (3m10s = +49bp, 10y=4.086%). Risk-on regime; term premium adequate."
+2026-02-19,48.0,42.8,110.9,NORMAL,neutral,0.858,-18.5,"Normal upward slope (3m10s = +48bp, 10y=4.075%). Risk-on regime; term premium adequate."
+2026-02-18,47.6,43.4,110.3,NORMAL,neutral,0.84,-18.1,"Normal upward slope (3m10s = +48bp, 10y=4.079%). Risk-on regime; term premium adequate."
+2026-02-17,45.9,43.1,109.0,NORMAL,neutral,0.756,-27.8,"Normal upward slope (3m10s = +46bp, 10y=4.052%). Risk-on regime; term premium adequate."
+2026-02-13,46.3,44.7,110.5,NORMAL,neutral,0.782,-27.2,"Normal upward slope (3m10s = +46bp, 10y=4.056%). Risk-on regime; term premium adequate."
+2026-02-12,50.6,43.6,113.3,NORMAL,risk_on,1.011,-22.4,"Normal upward slope (3m10s = +51bp, 10y=4.104%). Risk-on regime; term premium adequate."
+2026-02-11,57.2,43.1,121.4,NORMAL,risk_on,1.359,-15.6,"Normal upward slope (3m10s = +57bp, 10y=4.172%). Risk-on regime; term premium adequate."
+2026-02-10,55.7,44.8,119.8,NORMAL,risk_on,1.295,-14.6,"Normal upward slope (3m10s = +56bp, 10y=4.147%). Risk-on regime; term premium adequate."
+2026-02-09,60.5,45.7,125.5,NORMAL,risk_on,1.558,-4.0,"Normal upward slope (3m10s = +60bp, 10y=4.198%). Risk-on regime; term premium adequate."
+2026-02-06,61.6,45.1,126.5,NORMAL,risk_on,1.632,-7.9,"Normal upward slope (3m10s = +62bp, 10y=4.206%). Risk-on regime; term premium adequate."
+2026-02-05,63.2,46.0,128.4,NORMAL,risk_on,1.74,-7.5,"Normal upward slope (3m10s = +63bp, 10y=4.21%). Risk-on regime; term premium adequate."
+2026-02-04,68.0,44.2,132.0,NORMAL,risk_on,2.02,-1.0,"Normal upward slope (3m10s = +68bp, 10y=4.275%). Risk-on regime; term premium adequate."
+2026-02-03,68.4,43.7,131.6,NORMAL,risk_on,2.072,3.0,"Normal upward slope (3m10s = +68bp, 10y=4.274%). Risk-on regime; term premium adequate."
+2026-02-02,69.7,44.0,133.1,NORMAL,risk_on,2.17,5.5,"Normal upward slope (3m10s = +70bp, 10y=4.275%). Risk-on regime; term premium adequate."
+2026-01-30,66.9,44.4,130.0,NORMAL,risk_on,2.044,2.1,"Normal upward slope (3m10s = +67bp, 10y=4.241%). Risk-on regime; term premium adequate."
+2026-01-29,64.7,42.2,127.4,NORMAL,risk_on,1.953,0.7,"Normal upward slope (3m10s = +65bp, 10y=4.227%). Risk-on regime; term premium adequate."
+2026-01-28,66.9,40.9,127.8,NORMAL,risk_on,2.102,3.1,"Normal upward slope (3m10s = +67bp, 10y=4.251%). Risk-on regime; term premium adequate."
+2026-01-27,65.3,40.9,126.2,NORMAL,risk_on,2.04,-13.7,"Normal upward slope (3m10s = +65bp, 10y=4.223%). Risk-on regime; term premium adequate."
+2026-01-26,63.8,39.5,123.0,NORMAL,risk_on,1.987,-16.3,"Normal upward slope (3m10s = +64bp, 10y=4.213%). Risk-on regime; term premium adequate."
+2026-01-23,65.7,40.0,125.1,NORMAL,risk_on,2.127,-14.7,"Normal upward slope (3m10s = +66bp, 10y=4.239%). Risk-on regime; term premium adequate."
+2026-01-22,66.1,40.2,125.9,NORMAL,risk_on,2.185,-13.7,"Normal upward slope (3m10s = +66bp, 10y=4.249%). Risk-on regime; term premium adequate."
+2026-01-21,66.5,42.2,128.3,NORMAL,risk_on,2.258,-13.3,"Normal upward slope (3m10s = +66bp, 10y=4.253%). Risk-on regime; term premium adequate."
+2026-01-20,72.3,43.7,134.8,NORMAL,risk_on,2.643,-11.3,"Normal upward slope (3m10s = +72bp, 10y=4.295%). Risk-on regime; term premium adequate."
+2026-01-16,67.4,40.3,128.3,NORMAL,risk_on,2.382,-20.1,"Normal upward slope (3m10s = +67bp, 10y=4.231%). Risk-on regime; term premium adequate."
+2026-01-15,59.5,39.8,122.2,NORMAL,risk_on,1.936,-27.2,"Normal upward slope (3m10s = +60bp, 10y=4.16%). Risk-on regime; term premium adequate."
+2026-01-14,58.0,42.3,123.5,NORMAL,risk_on,1.875,-29.2,"Normal upward slope (3m10s = +58bp, 10y=4.14%). Risk-on regime; term premium adequate."
+2026-01-13,61.1,42.8,126.8,NORMAL,risk_on,2.104,-29.2,"Normal upward slope (3m10s = +61bp, 10y=4.171%). Risk-on regime; term premium adequate."
+2026-01-12,65.4,42.0,130.7,NORMAL,risk_on,2.415,-26.8,"Normal upward slope (3m10s = +65bp, 10y=4.187%). Risk-on regime; term premium adequate."
+2026-01-09,65.8,41.4,130.6,NORMAL,risk_on,2.497,-25.2,"Normal upward slope (3m10s = +66bp, 10y=4.171%). Risk-on regime; term premium adequate."
+2026-01-08,67.6,44.7,135.1,NORMAL,risk_on,2.658,-24.0,"Normal upward slope (3m10s = +68bp, 10y=4.183%). Risk-on regime; term premium adequate."
+2026-01-07,62.3,44.4,130.0,NORMAL,risk_on,2.374,-28.5,"Normal upward slope (3m10s = +62bp, 10y=4.138%). Risk-on regime; term premium adequate."
+2026-01-06,65.9,45.9,134.6,NORMAL,risk_on,2.669,-16.7,"Normal upward slope (3m10s = +66bp, 10y=4.179%). Risk-on regime; term premium adequate."
+2026-01-05,65.0,45.5,133.9,NORMAL,risk_on,2.675,-17.7,"Normal upward slope (3m10s = +65bp, 10y=4.165%). Risk-on regime; term premium adequate."
+2026-01-02,65.4,44.8,133.1,NORMAL,risk_on,2.759,-16.1,"Normal upward slope (3m10s = +65bp, 10y=4.187%). Risk-on regime; term premium adequate."
+2025-12-31,61.6,44.1,129.3,NORMAL,risk_on,2.548,-18.5,"Normal upward slope (3m10s = +62bp, 10y=4.163%). Risk-on regime; term premium adequate."
+2025-12-30,59.0,44.8,127.3,NORMAL,risk_on,2.413,-21.8,"Normal upward slope (3m10s = +59bp, 10y=4.13%). Risk-on regime; term premium adequate."
+2025-12-29,57.8,43.9,126.7,NORMAL,risk_on,2.381,-17.7,"Normal upward slope (3m10s = +58bp, 10y=4.116%). Risk-on regime; term premium adequate."
+2025-12-26,59.3,43.9,127.7,NORMAL,risk_on,2.542,-14.7,"Normal upward slope (3m10s = +59bp, 10y=4.136%). Risk-on regime; term premium adequate."
+2025-12-24,58.1,41.9,124.3,NORMAL,risk_on,2.526,-14.7,"Normal upward slope (3m10s = +58bp, 10y=4.136%). Risk-on regime; term premium adequate."
+2025-12-23,62.2,43.5,128.4,NORMAL,risk_on,2.923,-8.4,"Normal upward slope (3m10s = +62bp, 10y=4.169%). Risk-on regime; term premium adequate."
+2025-12-22,64.1,45.1,131.4,NORMAL,risk_on,3.169,-12.4,"Normal upward slope (3m10s = +64bp, 10y=4.169%). Risk-on regime; term premium adequate."
+2025-12-19,62.9,45.8,130.6,NORMAL,risk_on,3.164,-22.4,"Normal upward slope (3m10s = +63bp, 10y=4.151%). Risk-on regime; term premium adequate."
+2025-12-18,59.4,45.6,127.7,NORMAL,risk_on,2.982,-25.9,"Normal upward slope (3m10s = +59bp, 10y=4.116%). Risk-on regime; term premium adequate."
+2025-12-17,60.8,45.6,128.5,NORMAL,risk_on,3.207,-22.4,"Normal upward slope (3m10s = +61bp, 10y=4.151%). Risk-on regime; term premium adequate."
+2025-12-16,60.4,45.6,127.9,NORMAL,risk_on,3.323,-24.8,"Normal upward slope (3m10s = +60bp, 10y=4.149%). Risk-on regime; term premium adequate."
+2025-12-15,64.4,44.9,131.3,NORMAL,risk_on,3.889,-21.5,"Normal upward slope (3m10s = +64bp, 10y=4.182%). Risk-on regime; term premium adequate."
+2025-12-12,66.9,44.3,133.3,NORMAL,risk_on,4.279,-23.0,"Normal upward slope (3m10s = +67bp, 10y=4.194%). Risk-on regime; term premium adequate."
+2025-12-11,57.3,42.6,122.2,NORMAL,risk_on,3.507,-28.3,"Normal upward slope (3m10s = +57bp, 10y=4.141%). Risk-on regime; term premium adequate."
+2025-12-10,57.1,40.7,120.4,NORMAL,risk_on,3.636,-26.0,"Normal upward slope (3m10s = +57bp, 10y=4.164%). Risk-on regime; term premium adequate."
+2025-12-09,55.4,40.6,117.7,NORMAL,risk_on,3.624,-17.1,"Normal upward slope (3m10s = +55bp, 10y=4.186%). Risk-on regime; term premium adequate."
+2025-12-08,55.4,41.9,119.8,NORMAL,risk_on,3.791,-24.0,"Normal upward slope (3m10s = +55bp, 10y=4.172%). Risk-on regime; term premium adequate."
+2025-12-05,53.6,42.4,118.9,NORMAL,risk_on,3.731,-37.1,"Normal upward slope (3m10s = +54bp, 10y=4.139%). Risk-on regime; term premium adequate."
+2025-12-04,49.6,42.6,115.3,NORMAL,neutral,3.348,-40.2,"Normal upward slope (3m10s = +50bp, 10y=4.108%). Risk-on regime; term premium adequate."
+2025-12-03,42.2,43.3,109.0,NORMAL,neutral,2.546,-45.3,"Normal upward slope (3m10s = +42bp, 10y=4.057%). Risk-on regime; term premium adequate."
+2025-12-02,41.4,42.7,106.9,NORMAL,neutral,2.507,-30.8,"Normal upward slope (3m10s = +41bp, 10y=4.086%). Risk-on regime; term premium adequate."
+2025-12-01,40.3,42.3,105.1,NORMAL,neutral,2.392,-26.9,"Normal upward slope (3m10s = +40bp, 10y=4.096%). Risk-on regime; term premium adequate."
+2025-11-28,32.0,41.7,96.8,NORMAL,neutral,1.39,-39.9,"Normal upward slope (3m10s = +32bp, 10y=4.017%). Risk-on regime; term premium adequate."
+2025-11-26,24.5,42.6,89.1,FLAT,neutral,0.493,-41.8,Curve FLAT (3m10s = +24bp). Awaiting directional catalyst; low term-premium environment.
+2025-11-25,27.0,43.7,92.6,NORMAL,neutral,0.804,-42.2,"Normal upward slope (3m10s = +27bp, 10y=4.002%). Risk-on regime; term premium adequate."
+2025-11-24,30.8,43.3,94.8,NORMAL,neutral,1.277,-43.9,"Normal upward slope (3m10s = +31bp, 10y=4.038%). Risk-on regime; term premium adequate."
+2025-11-21,32.3,44.5,97.5,NORMAL,neutral,1.478,-44.6,"Normal upward slope (3m10s = +32bp, 10y=4.063%). Risk-on regime; term premium adequate."
+2025-11-20,33.1,43.3,95.7,NORMAL,neutral,1.606,-40.3,"Normal upward slope (3m10s = +33bp, 10y=4.106%). Risk-on regime; term premium adequate."
+2025-11-19,36.1,42.5,98.0,NORMAL,neutral,2.007,-37.6,"Normal upward slope (3m10s = +36bp, 10y=4.133%). Risk-on regime; term premium adequate."
+2025-11-18,35.1,42.9,97.1,NORMAL,neutral,1.92,-43.0,"Normal upward slope (3m10s = +35bp, 10y=4.123%). Risk-on regime; term premium adequate."
+2025-11-17,36.1,41.2,96.4,NORMAL,neutral,2.086,-46.3,"Normal upward slope (3m10s = +36bp, 10y=4.133%). Risk-on regime; term premium adequate."
+2025-11-14,36.0,41.3,95.9,NORMAL,neutral,2.096,-29.3,"Normal upward slope (3m10s = +36bp, 10y=4.148%). Risk-on regime; term premium adequate."
+2025-11-13,31.9,40.9,90.9,NORMAL,neutral,1.584,-32.9,"Normal upward slope (3m10s = +32bp, 10y=4.112%). Risk-on regime; term premium adequate."
+2025-11-12,28.7,39.7,88.3,NORMAL,neutral,1.2,-37.6,"Normal upward slope (3m10s = +29bp, 10y=4.065%). Risk-on regime; term premium adequate."
+2025-11-11,33.7,40.1,92.7,NORMAL,neutral,1.872,-33.5,"Normal upward slope (3m10s = +34bp, 10y=4.12%). Risk-on regime; term premium adequate."
+2025-11-10,32.7,40.0,91.9,NORMAL,neutral,1.774,-41.8,"Normal upward slope (3m10s = +33bp, 10y=4.11%). Risk-on regime; term premium adequate."
+2025-11-07,33.6,41.3,94.3,NORMAL,neutral,1.924,-28.2,"Normal upward slope (3m10s = +34bp, 10y=4.093%). Risk-on regime; term premium adequate."
+2025-11-06,33.0,40.4,92.5,NORMAL,neutral,1.899,-28.2,"Normal upward slope (3m10s = +33bp, 10y=4.093%). Risk-on regime; term premium adequate."
+2025-11-05,36.9,39.2,94.8,NORMAL,neutral,2.448,-21.8,"Normal upward slope (3m10s = +37bp, 10y=4.157%). Risk-on regime; term premium adequate."
+2025-11-04,29.6,38.8,87.7,NORMAL,neutral,1.487,-28.4,"Normal upward slope (3m10s = +30bp, 10y=4.089%). Risk-on regime; term premium adequate."
+2025-11-03,32.3,39.1,90.6,NORMAL,neutral,1.928,-16.9,"Normal upward slope (3m10s = +32bp, 10y=4.106%). Risk-on regime; term premium adequate."
+2025-10-31,38.3,38.4,95.2,NORMAL,neutral,2.83,,"Normal upward slope (3m10s = +38bp, 10y=4.101%). Risk-on regime; term premium adequate."
+2025-10-30,33.6,37.3,89.0,NORMAL,neutral,2.207,,"Normal upward slope (3m10s = +34bp, 10y=4.093%). Risk-on regime; term premium adequate."
+2025-10-29,32.8,36.1,87.0,NORMAL,neutral,2.103,,"Normal upward slope (3m10s = +33bp, 10y=4.058%). Risk-on regime; term premium adequate."
+2025-10-28,26.3,37.0,82.7,NORMAL,neutral,1.179,,"Normal upward slope (3m10s = +26bp, 10y=3.983%). Risk-on regime; term premium adequate."
+2025-10-27,27.9,38.3,85.2,NORMAL,neutral,1.415,,"Normal upward slope (3m10s = +28bp, 10y=3.997%). Risk-on regime; term premium adequate."
+2025-10-24,23.4,39.5,82.2,FLAT,neutral,0.762,,Curve FLAT (3m10s = +23bp). Awaiting directional catalyst; low term-premium environment.
+2025-10-23,20.3,39.4,78.5,FLAT,neutral,0.31,,Curve FLAT (3m10s = +20bp). Awaiting directional catalyst; low term-premium environment.
+2025-10-22,16.5,40.1,75.1,FLAT,neutral,-0.236,,Curve FLAT (3m10s = +16bp). Awaiting directional catalyst; low term-premium environment.
+2025-10-21,17.8,40.3,76.3,FLAT,neutral,-0.049,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-10-20,18.8,40.8,77.8,FLAT,neutral,0.093,,Curve FLAT (3m10s = +19bp). Awaiting directional catalyst; low term-premium environment.
+2025-10-17,17.5,41.5,77.1,FLAT,neutral,-0.099,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-10-16,12.3,42.6,73.0,FLAT,neutral,-0.833,,Curve FLAT (3m10s = +12bp). Awaiting directional catalyst; low term-premium environment.
+2025-10-15,18.8,41.6,78.1,FLAT,neutral,0.084,,Curve FLAT (3m10s = +19bp). Awaiting directional catalyst; low term-premium environment.
+2025-10-14,16.9,41.8,77.0,FLAT,neutral,-0.181,,Curve FLAT (3m10s = +17bp). Awaiting directional catalyst; low term-premium environment.
+2025-10-13,19.8,40.5,77.8,FLAT,neutral,0.226,,Curve FLAT (3m10s = +20bp). Awaiting directional catalyst; low term-premium environment.
+2025-10-10,19.8,40.5,78.1,FLAT,neutral,0.243,,Curve FLAT (3m10s = +20bp). Awaiting directional catalyst; low term-premium environment.
+2025-10-09,29.5,40.7,88.0,NORMAL,neutral,1.628,,"Normal upward slope (3m10s = +30bp, 10y=4.148%). Risk-on regime; term premium adequate."
+2025-10-08,28.6,40.9,88.1,NORMAL,neutral,1.524,,"Normal upward slope (3m10s = +29bp, 10y=4.129%). Risk-on regime; term premium adequate."
+2025-10-07,28.4,42.1,88.3,NORMAL,neutral,1.528,,"Normal upward slope (3m10s = +28bp, 10y=4.127%). Risk-on regime; term premium adequate."
+2025-10-06,30.2,41.7,89.8,NORMAL,neutral,1.802,,"Normal upward slope (3m10s = +30bp, 10y=4.162%). Risk-on regime; term premium adequate."
+2025-10-03,26.1,41.1,85.6,NORMAL,neutral,1.22,,"Normal upward slope (3m10s = +26bp, 10y=4.119%). Risk-on regime; term premium adequate."
+2025-10-02,24.0,41.5,84.7,FLAT,neutral,0.933,,Curve FLAT (3m10s = +24bp). Awaiting directional catalyst; low term-premium environment.
+2025-10-01,26.1,42.6,87.0,NORMAL,neutral,1.269,,"Normal upward slope (3m10s = +26bp, 10y=4.106%). Risk-on regime; term premium adequate."
+2025-09-30,30.3,41.6,88.7,NORMAL,neutral,1.91,,"Normal upward slope (3m10s = +30bp, 10y=4.148%). Risk-on regime; term premium adequate."
+2025-09-29,27.8,40.0,84.1,NORMAL,neutral,1.601,,"Normal upward slope (3m10s = +28bp, 10y=4.141%). Risk-on regime; term premium adequate."
+2025-09-26,32.7,41.7,90.6,NORMAL,neutral,2.382,,"Normal upward slope (3m10s = +33bp, 10y=4.187%). Risk-on regime; term premium adequate."
+2025-09-25,28.9,40.5,86.9,NORMAL,neutral,1.846,,"Normal upward slope (3m10s = +29bp, 10y=4.172%). Risk-on regime; term premium adequate."
+2025-09-24,28.9,43.7,90.0,NORMAL,neutral,1.88,,"Normal upward slope (3m10s = +29bp, 10y=4.147%). Risk-on regime; term premium adequate."
+2025-09-23,27.5,44.3,89.3,NORMAL,neutral,1.711,,"Normal upward slope (3m10s = +28bp, 10y=4.12%). Risk-on regime; term premium adequate."
+2025-09-22,29.5,44.7,91.3,NORMAL,neutral,2.057,,"Normal upward slope (3m10s = +30bp, 10y=4.143%). Risk-on regime; term premium adequate."
+2025-09-19,26.1,44.8,87.8,NORMAL,neutral,1.526,,"Normal upward slope (3m10s = +26bp, 10y=4.139%). Risk-on regime; term premium adequate."
+2025-09-18,22.4,44.1,84.0,FLAT,neutral,0.944,,Curve FLAT (3m10s = +22bp). Awaiting directional catalyst; low term-premium environment.
+2025-09-17,20.8,42.7,80.7,FLAT,neutral,0.683,,Curve FLAT (3m10s = +21bp). Awaiting directional catalyst; low term-premium environment.
+2025-09-16,13.6,44.3,75.6,FLAT,neutral,-0.454,,Curve FLAT (3m10s = +14bp). Awaiting directional catalyst; low term-premium environment.
+2025-09-15,13.4,43.2,75.6,FLAT,neutral,-0.489,,Curve FLAT (3m10s = +13bp). Awaiting directional catalyst; low term-premium environment.
+2025-09-12,13.3,43.6,75.1,FLAT,neutral,-0.522,,Curve FLAT (3m10s = +13bp). Awaiting directional catalyst; low term-premium environment.
+2025-09-11,8.3,43.3,72.3,FLAT,neutral,-1.317,,Curve FLAT (3m10s = +8bp). Awaiting directional catalyst; low term-premium environment.
+2025-09-10,10.2,45.0,74.8,FLAT,neutral,-1.022,,Curve FLAT (3m10s = +10bp). Awaiting directional catalyst; low term-premium environment.
+2025-09-09,13.1,47.3,77.5,FLAT,neutral,-0.577,,Curve FLAT (3m10s = +13bp). Awaiting directional catalyst; low term-premium environment.
+2025-09-08,11.8,47.6,76.1,FLAT,neutral,-0.773,,Curve FLAT (3m10s = +12bp). Awaiting directional catalyst; low term-premium environment.
+2025-09-05,17.6,50.3,86.5,FLAT,neutral,0.126,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-09-04,17.8,52.3,87.6,FLAT,neutral,0.16,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-09-03,19.3,52.6,87.4,FLAT,neutral,0.406,,Curve FLAT (3m10s = +19bp). Awaiting directional catalyst; low term-premium environment.
+2025-09-02,24.5,53.4,93.9,FLAT,neutral,1.2,,Curve FLAT (3m10s = +24bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-29,18.4,52.8,87.4,FLAT,neutral,0.262,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-28,13.5,51.1,80.2,FLAT,neutral,-0.477,,Curve FLAT (3m10s = +14bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-27,17.8,53.3,85.3,FLAT,neutral,0.172,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-26,17.0,51.8,82.1,FLAT,neutral,0.055,,Curve FLAT (3m10s = +17bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-25,18.2,49.0,79.5,FLAT,neutral,0.233,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-22,17.2,50.1,79.6,FLAT,neutral,0.092,,Curve FLAT (3m10s = +17bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-21,20.2,47.3,79.6,FLAT,neutral,0.533,,Curve FLAT (3m10s = +20bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-20,18.1,48.6,78.9,FLAT,neutral,0.23,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-19,19.2,48.0,79.2,FLAT,neutral,0.4,,Curve FLAT (3m10s = +19bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-18,21.8,48.6,81.9,FLAT,neutral,0.785,,Curve FLAT (3m10s = +22bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-15,21.6,48.3,81.4,FLAT,neutral,0.754,,Curve FLAT (3m10s = +22bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-14,18.1,47.2,77.1,FLAT,neutral,0.243,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-13,12.8,46.8,71.8,FLAT,neutral,-0.509,,Curve FLAT (3m10s = +13bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-12,16.3,47.1,75.5,FLAT,neutral,-0.021,,Curve FLAT (3m10s = +16bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-11,13.0,45.0,69.8,FLAT,neutral,-0.484,,Curve FLAT (3m10s = +13bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-08,15.2,45.5,72.2,FLAT,neutral,-0.19,,Curve FLAT (3m10s = +15bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-07,10.6,45.4,67.8,FLAT,neutral,-0.85,,Curve FLAT (3m10s = +11bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-06,8.7,45.6,67.8,FLAT,neutral,-1.161,,Curve FLAT (3m10s = +9bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-05,4.6,43.4,61.9,FLAT,neutral,-1.803,,Curve FLAT (3m10s = +5bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-04,4.7,45.7,64.4,FLAT,neutral,-1.865,,Curve FLAT (3m10s = +5bp). Awaiting directional catalyst; low term-premium environment.
+2025-08-01,3.8,44.9,62.5,FLAT,neutral,-2.002,,Curve FLAT (3m10s = +4bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-31,12.5,40.0,65.1,FLAT,neutral,-0.724,,Curve FLAT (3m10s = +12bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-30,14.4,41.1,67.9,FLAT,neutral,-0.466,,Curve FLAT (3m10s = +14bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-29,10.0,42.4,64.1,FLAT,neutral,-1.099,,Curve FLAT (3m10s = +10bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-28,18.5,44.3,72.9,FLAT,neutral,0.125,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-25,14.1,43.4,68.4,FLAT,neutral,-0.508,,Curve FLAT (3m10s = +14bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-24,16.3,43.7,70.4,FLAT,neutral,-0.2,,Curve FLAT (3m10s = +16bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-23,14.8,45.4,70.9,FLAT,neutral,-0.432,,Curve FLAT (3m10s = +15bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-22,10.6,46.0,67.2,FLAT,neutral,-1.028,,Curve FLAT (3m10s = +11bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-21,14.9,46.4,71.4,FLAT,neutral,-0.413,,Curve FLAT (3m10s = +15bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-18,20.2,47.0,77.1,FLAT,neutral,0.338,,Curve FLAT (3m10s = +20bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-17,22.8,45.7,77.9,FLAT,neutral,0.71,,Curve FLAT (3m10s = +23bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-16,23.0,47.0,78.9,FLAT,neutral,0.764,,Curve FLAT (3m10s = +23bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-15,25.7,43.9,78.6,NORMAL,neutral,1.133,,"Normal upward slope (3m10s = +26bp, 10y=4.489%). Risk-on regime; term premium adequate."
+2025-07-14,19.9,44.2,74.5,FLAT,neutral,0.339,,Curve FLAT (3m10s = +20bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-11,18.6,43.1,72.0,FLAT,neutral,0.142,,Curve FLAT (3m10s = +19bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-10,10.6,41.5,62.1,FLAT,neutral,-0.966,,Curve FLAT (3m10s = +11bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-09,9.7,42.2,63.1,FLAT,neutral,-1.079,,Curve FLAT (3m10s = +10bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-08,16.5,43.0,69.4,FLAT,neutral,-0.177,,Curve FLAT (3m10s = +16bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-07,15.0,42.9,68.6,FLAT,neutral,-0.399,,Curve FLAT (3m10s = +15bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-03,10.8,40.9,62.2,FLAT,neutral,-1.008,,Curve FLAT (3m10s = +11bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-02,7.0,42.3,60.0,FLAT,neutral,-1.66,,Curve FLAT (3m10s = +7bp). Awaiting directional catalyst; low term-premium environment.
+2025-07-01,2.6,40.9,55.4,FLAT,neutral,-2.465,,Curve FLAT (3m10s = +3bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-30,4.0,43.5,58.9,FLAT,neutral,-2.355,,Curve FLAT (3m10s = +4bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-27,8.6,45.5,64.8,FLAT,neutral,-1.807,,Curve FLAT (3m10s = +9bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-26,6.0,45.4,62.3,FLAT,neutral,-2.32,,Curve FLAT (3m10s = +6bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-25,10.5,44.6,65.4,FLAT,neutral,-1.661,,Curve FLAT (3m10s = +10bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-24,11.1,43.7,64.7,FLAT,neutral,-1.57,,Curve FLAT (3m10s = +11bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-23,16.2,43.6,69.9,FLAT,neutral,-0.726,,Curve FLAT (3m10s = +16bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-20,18.0,41.4,69.4,FLAT,neutral,,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-18,17.4,40.4,67.2,FLAT,neutral,,,Curve FLAT (3m10s = +17bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-17,17.5,40.4,67.5,FLAT,neutral,,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-16,20.4,41.7,70.6,FLAT,neutral,,,Curve FLAT (3m10s = +20bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-13,18.4,40.0,67.5,FLAT,neutral,,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-12,9.9,39.7,58.4,FLAT,neutral,,,Curve FLAT (3m10s = +10bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-11,16.2,40.3,65.8,FLAT,neutral,,,Curve FLAT (3m10s = +16bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-10,22.4,39.0,69.0,FLAT,neutral,,,Curve FLAT (3m10s = +22bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-09,24.2,39.6,71.4,FLAT,neutral,,,Curve FLAT (3m10s = +24bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-06,27.8,38.4,73.1,NORMAL,neutral,,,"Normal upward slope (3m10s = +28bp, 10y=4.51%). Risk-on regime; term premium adequate."
+2025-06-05,16.2,40.5,65.2,FLAT,neutral,,,Curve FLAT (3m10s = +16bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-04,12.5,43.3,64.7,FLAT,neutral,,,Curve FLAT (3m10s = +12bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-03,22.5,43.2,74.8,FLAT,neutral,,,Curve FLAT (3m10s = +22bp). Awaiting directional catalyst; low term-premium environment.
+2025-06-02,23.0,44.5,76.3,FLAT,neutral,,,Curve FLAT (3m10s = +23bp). Awaiting directional catalyst; low term-premium environment.
+2025-05-30,18.4,43.7,69.7,FLAT,neutral,,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-05-29,19.4,42.6,69.3,FLAT,neutral,,,Curve FLAT (3m10s = +19bp). Awaiting directional catalyst; low term-premium environment.
+2025-05-28,25.2,41.2,75.0,NORMAL,neutral,,,"Normal upward slope (3m10s = +25bp, 10y=4.477%). Risk-on regime; term premium adequate."
+2025-05-27,23.1,41.1,73.7,FLAT,neutral,,,Curve FLAT (3m10s = +23bp). Awaiting directional catalyst; low term-premium environment.
+2025-05-23,27.9,43.1,80.1,NORMAL,neutral,,,"Normal upward slope (3m10s = +28bp, 10y=4.509%). Risk-on regime; term premium adequate."
+2025-05-22,32.1,44.0,83.3,NORMAL,neutral,,,"Normal upward slope (3m10s = +32bp, 10y=4.553%). Risk-on regime; term premium adequate."
+2025-05-21,36.1,43.9,85.5,NORMAL,neutral,,,"Normal upward slope (3m10s = +36bp, 10y=4.596%). Risk-on regime; term premium adequate."
+2025-05-20,23.3,41.4,71.9,FLAT,neutral,,,Curve FLAT (3m10s = +23bp). Awaiting directional catalyst; low term-premium environment.
+2025-05-19,23.5,39.4,70.0,FLAT,neutral,,,Curve FLAT (3m10s = +24bp). Awaiting directional catalyst; low term-premium environment.
+2025-05-16,20.4,37.7,66.2,FLAT,neutral,,,Curve FLAT (3m10s = +20bp). Awaiting directional catalyst; low term-premium environment.
+2025-05-15,19.7,38.2,66.0,FLAT,neutral,,,Curve FLAT (3m10s = +20bp). Awaiting directional catalyst; low term-premium environment.
+2025-05-14,24.3,36.6,68.2,FLAT,neutral,,,Curve FLAT (3m10s = +24bp). Awaiting directional catalyst; low term-premium environment.
+2025-05-13,21.4,37.8,65.8,FLAT,neutral,,,Curve FLAT (3m10s = +21bp). Awaiting directional catalyst; low term-premium environment.
+2025-05-12,17.7,35.6,60.8,FLAT,neutral,,,Curve FLAT (3m10s = +18bp). Awaiting directional catalyst; low term-premium environment.
+2025-05-09,16.0,38.8,61.8,FLAT,neutral,,,Curve FLAT (3m10s = +16bp). Awaiting directional catalyst; low term-premium environment.
+2025-05-08,15.8,37.9,62.1,FLAT,neutral,,,Curve FLAT (3m10s = +16bp). Awaiting directional catalyst; low term-premium environment.
+2025-05-07,6.0,40.2,55.8,FLAT,neutral,,,Curve FLAT (3m10s = +6bp). Awaiting directional catalyst; low term-premium environment.
